@@ -1,0 +1,69 @@
+{
+  "id": "05",
+  "title": "Transporte de energía",
+  "subtitle": "Radiación, convección y gradientes de temperatura",
+  "next": "06 — Atmósferas estelares",
+  "materials": [
+    {
+      "label": "8c — Transporte de energía",
+      "file": "8c_transporte_energia.pdf"
+    },
+    {
+      "label": "Material complementario — Estructura estelar / Sol",
+      "file": "Material_complementario_Estructura_estelar_El_Sol.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "Si κ aumenta, manteniendo otras variables, ∇rad tiende a:",
+      "options": [
+        "Aumentar",
+        "Disminuir",
+        "No cambiar"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Radiación menos eficiente exige mayor gradiente."
+    },
+    {
+      "question": "Si ∇rad>∇ad, la capa tiende a ser:",
+      "options": [
+        "Convectiva",
+        "Radiativa estable",
+        "Isoterma por definición"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Aplique Schwarzschild."
+    },
+    {
+      "question": "Para gas monoatómico ideal, ∇ad≈:",
+      "options": [
+        "0.4",
+        "1.0",
+        "0.1"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "γ=5/3."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_entry": "app/app_lab.py",
+  "lab_version": "v1.0",
+  "lab_experiments": [
+    "Camino libre medio",
+    "Gradiente radiativo",
+    "Burbuja y gradiente adiabático",
+    "Competencia radiación/convección",
+    "Estructura solar cualitativa",
+    "Síntesis local del transporte"
+  ],
+  "levels_ready": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "levels_file": "levels.json"
+}

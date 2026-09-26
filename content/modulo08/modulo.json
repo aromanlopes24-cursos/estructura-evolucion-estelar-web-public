@@ -1,0 +1,89 @@
+{
+  "id": "08",
+  "title": "Evolución post-ZAMS",
+  "subtitle": "Subgigante, RGB, He, AGB y principios estructurales",
+  "next": "Fin del bloque cubierto por el material actual",
+  "materials": [
+    {
+      "label": "Clase de evolución estelar",
+      "file": "Clase_evolucion_estelar.pdf"
+    },
+    {
+      "label": "Evolución post-ZAMS",
+      "file": "Evolucion_post_ZAMS.pdf"
+    },
+    {
+      "label": "Principio del espejo",
+      "file": "Principio_del_Espejo.pdf"
+    },
+    {
+      "label": "Límite Schönberg–Chandrasekhar",
+      "file": "Limite_Schonberg_Chandrasekhar.pdf"
+    },
+    {
+      "label": "Estructura de estrella solar evolucionada",
+      "file": "Estructura_estrella_solar_evolucionada.pdf"
+    },
+    {
+      "label": "De RGB a AGB",
+      "file": "Evolucion_RGB_AGB.pdf"
+    },
+    {
+      "label": "Evolución de una estrella de 5 Msun",
+      "file": "Evolucion_estrella_5Msun.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "Si el núcleo se contrae tras agotar H central, el principio del espejo predice que la envoltura:",
+      "options": [
+        "Se expande",
+        "También se contrae necesariamente",
+        "Desaparece"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Respuesta estructural inversa núcleo–envoltura."
+    },
+    {
+      "question": "La fusión de H después del agotamiento central ocurre principalmente:",
+      "options": [
+        "En una capa alrededor del núcleo de He",
+        "En el vacío",
+        "Sólo en la fotosfera"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Shell burning."
+    },
+    {
+      "question": "El límite Schönberg–Chandrasekhar se refiere a:",
+      "options": [
+        "La masa máxima aproximada de un núcleo isotermo de He en ciertas condiciones",
+        "La magnitud aparente",
+        "El radio de Júpiter"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Es un límite estructural del núcleo."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_entry": "app/app_lab.py",
+  "lab_version": "v1.0",
+  "lab_experiments": [
+    "Secuencia ZAMS–SGB–RGB",
+    "Principio del espejo y virial",
+    "Límite de Schönberg–Chandrasekhar",
+    "Referencia de estrella solar evolucionada",
+    "Secuencia RGB–flash de He–HB–AGB",
+    "Síntesis post-ZAMS"
+  ],
+  "levels_ready": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "levels_file": "levels.json"
+}

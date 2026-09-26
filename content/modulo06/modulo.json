@@ -1,0 +1,68 @@
+{
+  "id": "06",
+  "title": "Atmósferas estelares",
+  "subtitle": "Campo de radiación, opacidad y formación del espectro",
+  "next": "07 — Secuencia principal",
+  "materials": [
+    {
+      "label": "Atmósferas estelares",
+      "file": "Atmosferas_estelares.pdf"
+    },
+    {
+      "label": "Clase 1 — conceptos radiativos",
+      "file": "Estelar_Clase_1.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "Una capa con τ≫1 es:",
+      "options": [
+        "Ópticamente gruesa",
+        "Ópticamente delgada",
+        "Vacío perfecto"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "τ mide acumulación de interacción radiativa."
+    },
+    {
+      "question": "El espectro observado se forma principalmente en:",
+      "options": [
+        "Las capas atmosféricas externas",
+        "El centro geométrico sin interacción",
+        "El espacio intergaláctico"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "La atmósfera procesa la radiación emergente."
+    },
+    {
+      "question": "La opacidad puede depender de frecuencia?",
+      "options": [
+        "Sí",
+        "No"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Eso es esencial para formar un espectro no gris."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_entry": "app/app_lab.py",
+  "lab_version": "v1.0",
+  "lab_experiments": [
+    "Función de Planck e intensidad de cuerpo negro",
+    "Densidad de energía radiativa",
+    "Opacidad, camino libre y profundidad óptica",
+    "Corrección de extinción atmosférica",
+    "Profundidad óptica y fotosfera",
+    "Estructura y ensanchamiento de líneas"
+  ],
+  "levels_ready": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "levels_file": "levels.json"
+}

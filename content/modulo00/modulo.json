@@ -1,0 +1,69 @@
+{
+  "id": "00",
+  "title": "Observables estelares",
+  "subtitle": "Luminosidad, flujo, intensidad y temperatura efectiva",
+  "next": "01 — Fotometría y extinción",
+  "materials": [
+    {
+      "label": "Conceptos: luminosidad, flujo, intensidad y brillo superficial",
+      "file": "Conceptos_Luminosidad_flujo_brillo.pdf"
+    },
+    {
+      "label": "Clase 1 — Fotometría y magnitudes",
+      "file": "Estelar_Clase_1.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "Si una estrella mantiene L pero duplica su distancia, ¿qué ocurre con F?",
+      "options": [
+        "Se reduce a 1/4",
+        "Se reduce a 1/2",
+        "No cambia"
+      ],
+      "correct": 0,
+      "ok": "Correcto. F∝d⁻².",
+      "bad": "Use la ley del inverso del cuadrado."
+    },
+    {
+      "question": "Si R permanece fijo y Teff aumenta 10%, ¿qué cantidad responde fuertemente?",
+      "options": [
+        "La luminosidad, porque L∝Teff⁴",
+        "La distancia",
+        "El ángulo sólido necesariamente"
+      ],
+      "correct": 0,
+      "ok": "Correcto. La cuarta potencia hace a L muy sensible a Teff.",
+      "bad": "Revise Stefan–Boltzmann."
+    },
+    {
+      "question": "¿Cuál es intrínseca a la estrella?",
+      "options": [
+        "Luminosidad L",
+        "Flujo F en la Tierra",
+        "Magnitud aparente"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Distinga fuente y observador."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_entry": "app/app_lab.py",
+  "lab_version": "v1.0",
+  "lab_experiments": [
+    "Luminosidad intrínseca: R y Teff",
+    "Flujo y distancia: ley del inverso del cuadrado",
+    "Mismo flujo con luminosidades/distancias diferentes",
+    "Intensidad y fuente resuelta",
+    "Síntesis de observables"
+  ],
+  "levels_ready": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "levels_file": "exercises/levels.json",
+  "levels_version": "v1.0"
+}

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.DS_Store
+.streamlit/secrets.toml
+AUDITORIA_WEB_V1_2_RESULTADO.md
+_release_build/

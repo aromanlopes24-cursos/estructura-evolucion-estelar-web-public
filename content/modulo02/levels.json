@@ -1,0 +1,205 @@
+{
+  "module": "02",
+  "version": "1.0",
+  "levels": {
+    "1": {
+      "title": "Comprensión conceptual",
+      "subtitle": "Conceptos y relaciones directas con feedback específico.",
+      "items": [
+        {
+          "id": "02-L1-01",
+          "type": "choice",
+          "title": "Signo hidrostático",
+          "prompt": "En equilibrio hidrostático, dP/dr normalmente es:",
+          "resource": "dP/dr=-GM(r)ρ/r²",
+          "options": [
+            "Negativo",
+            "Positivo",
+            "Cero en toda la estrella"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: la presión disminuye hacia afuera.",
+            "Un gradiente positivo haría crecer P hacia la superficie.",
+            "Sólo en el centro el gradiente puede tender a cero por simetría."
+          ]
+        },
+        {
+          "id": "02-L1-02",
+          "type": "choice",
+          "title": "Continuidad de masa",
+          "prompt": "En dM/dr=4πr²ρ, si ρ aumenta con r fijo:",
+          "resource": "dM/dr=4πr²ρ",
+          "options": [
+            "dM/dr aumenta",
+            "dM/dr disminuye",
+            "dM/dr no cambia"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "ρ entra multiplicativamente.",
+            "La ecuación depende explícitamente de ρ."
+          ]
+        },
+        {
+          "id": "02-L1-03",
+          "type": "choice",
+          "title": "Masa encerrada",
+          "prompt": "M(r) representa:",
+          "resource": "Símbolos",
+          "options": [
+            "La masa interior al radio r",
+            "La masa fuera de r",
+            "La luminosidad en r"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Es lo contrario.",
+            "M y L son funciones estructurales diferentes."
+          ]
+        },
+        {
+          "id": "02-L1-04",
+          "type": "choice",
+          "title": "Cierre del sistema",
+          "prompt": "¿Por qué hace falta una ecuación de estado?",
+          "resource": "TEORÍA",
+          "options": [
+            "Para relacionar variables termodinámicas locales",
+            "Para definir parsec",
+            "Para convertir magnitudes"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No es una relación geométrica.",
+            "No es una relación fotométrica."
+          ]
+        },
+        {
+          "id": "02-L1-05",
+          "type": "choice",
+          "title": "Esfera uniforme",
+          "prompt": "En una esfera de densidad uniforme, M(r)/M es:",
+          "resource": "Laboratorio",
+          "options": [
+            "(r/R)^3",
+            "r/R",
+            "(R/r)^2"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: la masa sigue el volumen.",
+            "Falta la dependencia cúbica del volumen.",
+            "Esta forma diverge hacia el centro."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Aplicación y cálculo",
+      "subtitle": "Cálculos e interpretación usando las relaciones del módulo.",
+      "items": [
+        {
+          "id": "02-L2-01",
+          "type": "numeric",
+          "title": "Fracción de masa",
+          "prompt": "En una esfera uniforme, calcule M(r)/M para r=R/2.",
+          "resource": "M(r)/M=(r/R)^3",
+          "answer": 0.125,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use (r/R)^3.",
+          "solution": "(1/2)^3=1/8=0.125.",
+          "abs_tol": 0.002
+        },
+        {
+          "id": "02-L2-02",
+          "type": "numeric",
+          "title": "Escalamiento de Pc",
+          "prompt": "En la esfera uniforme Pc∝M²/R⁴. Si M se duplica y R no cambia, calcule Pc,nueva/Pc,vieja.",
+          "resource": "Pc∝M²/R⁴",
+          "answer": 4.0,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Eleve la razón de masas al cuadrado.",
+          "solution": "2²=4.",
+          "abs_tol": 0.02
+        },
+        {
+          "id": "02-L2-03",
+          "type": "numeric",
+          "title": "Radio y Pc",
+          "prompt": "Con M fija, si R se duplica, calcule Pc,nueva/Pc,vieja.",
+          "resource": "Pc∝R^-4",
+          "answer": 0.0625,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use R^-4.",
+          "solution": "2^-4=1/16.",
+          "abs_tol": 0.003
+        },
+        {
+          "id": "02-L2-04",
+          "type": "numeric",
+          "title": "Gravedad uniforme",
+          "prompt": "En una esfera uniforme g(r)∝r. Calcule g(R/2)/g(R).",
+          "resource": "Laboratorio",
+          "answer": 0.5,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "En este benchmark M(r)∝r³, por tanto g∝r.",
+          "solution": "g(R/2)=0.5g(R).",
+          "abs_tol": 0.01
+        }
+      ]
+    },
+    "3": {
+      "title": "Desafío e interpretación",
+      "subtitle": "Razonamiento abierto con criterios explícitos de autoevaluación.",
+      "items": [
+        {
+          "id": "02-L3-01",
+          "type": "reflection",
+          "title": "Dos ecuaciones, tres funciones",
+          "prompt": "Explique por qué dP/dr y dM/dr no bastan para obtener simultáneamente P(r), M(r) y ρ(r).",
+          "resource": "TEORÍA",
+          "criteria": [
+            "Cuenta correctamente las funciones desconocidas.",
+            "Identifica la necesidad de una relación adicional.",
+            "Menciona una ecuación de estado o relación P–ρ como cierre."
+          ],
+          "guide": "El problema mecánico queda subdeterminado sin una relación física adicional."
+        },
+        {
+          "id": "02-L3-02",
+          "type": "reflection",
+          "title": "Benchmark uniforme",
+          "prompt": "Explique para qué sirve una esfera de densidad constante y por qué no debe interpretarse como un modelo solar realista.",
+          "resource": "Laboratorio",
+          "criteria": [
+            "Reconoce su valor como solución analítica de referencia.",
+            "Distingue benchmark de modelo real.",
+            "Menciona que estrellas reales tienen ρ(r) variable."
+          ],
+          "guide": "Una aproximación puede ser útil pedagógicamente sin ser una descripción completa."
+        },
+        {
+          "id": "02-L3-03",
+          "type": "reflection",
+          "title": "Presión central",
+          "prompt": "Compare la estimación Pc~GMρ/R con la solución exacta de la esfera uniforme y explique qué significa 'orden de magnitud'.",
+          "resource": "Laboratorio",
+          "criteria": [
+            "Reconoce que ambas tienen la misma escala dimensional.",
+            "Distingue estimación de solución exacta.",
+            "Interpreta una diferencia de factor de orden unidad correctamente."
+          ],
+          "guide": "Un estimador de orden de magnitud no pretende reproducir el coeficiente exacto."
+        }
+      ]
+    }
+  }
+}

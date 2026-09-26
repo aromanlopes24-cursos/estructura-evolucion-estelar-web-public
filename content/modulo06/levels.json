@@ -1,0 +1,205 @@
+{
+  "module": "06",
+  "version": "1.0",
+  "levels": {
+    "1": {
+      "title": "Comprensión conceptual",
+      "subtitle": "Conceptos y relaciones directas con feedback específico.",
+      "items": [
+        {
+          "id": "06-L1-01",
+          "type": "choice",
+          "title": "Intensidad",
+          "prompt": "Iλ se define por unidad de:",
+          "resource": "Atmósferas",
+          "options": [
+            "área, tiempo, longitud de onda y ángulo sólido",
+            "masa solamente",
+            "distancia solamente"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Faltan las dimensiones radiativas.",
+            "La distancia no define Iλ."
+          ]
+        },
+        {
+          "id": "06-L1-02",
+          "type": "choice",
+          "title": "Campo isotrópico",
+          "prompt": "Para un campo completamente isotrópico, el flujo neto Fλ es:",
+          "resource": "Atmósferas",
+          "options": [
+            "Cero",
+            "Máximo positivo",
+            "Igual a la luminosidad"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: las direcciones se cancelan.",
+            "No hay dirección neta privilegiada.",
+            "Flujo y luminosidad no son lo mismo."
+          ]
+        },
+        {
+          "id": "06-L1-03",
+          "type": "choice",
+          "title": "Profundidad óptica",
+          "prompt": "τ≫1 significa:",
+          "resource": "τλ",
+          "options": [
+            "Ópticamente grueso",
+            "Ópticamente delgado",
+            "Vacío"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Eso corresponde a τ≪1.",
+            "No."
+          ]
+        },
+        {
+          "id": "06-L1-04",
+          "type": "choice",
+          "title": "Fotosfera",
+          "prompt": "El material cita para fotones observables una profundidad característica cercana a:",
+          "resource": "Fotosfera",
+          "options": [
+            "τ≈2/3",
+            "τ≈20",
+            "τ=100"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Demasiado profunda.",
+            "Demasiado profunda."
+          ]
+        },
+        {
+          "id": "06-L1-05",
+          "type": "choice",
+          "title": "Doppler térmico",
+          "prompt": "El ensanchamiento Doppler térmico crece aproximadamente como:",
+          "resource": "Líneas",
+          "options": [
+            "√T",
+            "1/T",
+            "T^-4"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No.",
+            "No."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Aplicación y cálculo",
+      "subtitle": "Cálculos e interpretación usando las relaciones del módulo.",
+      "items": [
+        {
+          "id": "06-L2-01",
+          "type": "numeric",
+          "title": "Transmisión",
+          "prompt": "Calcule I/I0 para τ=1.",
+          "resource": "I=I0e^-τ",
+          "answer": 0.36787944117144233,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use e^-1.",
+          "solution": "≈0.3679.",
+          "abs_tol": 0.003
+        },
+        {
+          "id": "06-L2-02",
+          "type": "numeric",
+          "title": "Airmass",
+          "prompt": "En la aproximación plana sec z, calcule sec(60°).",
+          "resource": "Atmósfera terrestre",
+          "answer": 2.0,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "cos60°=0.5.",
+          "solution": "sec60°=2.",
+          "abs_tol": 0.01
+        },
+        {
+          "id": "06-L2-03",
+          "type": "numeric",
+          "title": "Random walk",
+          "prompt": "Para τ=10 y n≈τ², calcule n.",
+          "resource": "Escape",
+          "answer": 100.0,
+          "unit": "pasos relativos",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Eleve τ al cuadrado.",
+          "solution": "10²=100.",
+          "abs_tol": 1
+        },
+        {
+          "id": "06-L2-04",
+          "type": "numeric",
+          "title": "Densidad radiativa",
+          "prompt": "Si T se duplica y u=aT⁴, calcule unuevo/uviejo.",
+          "resource": "u=aT⁴",
+          "answer": 16.0,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use 2^4.",
+          "solution": "16.",
+          "abs_tol": 0.1
+        }
+      ]
+    },
+    "3": {
+      "title": "Desafío e interpretación",
+      "subtitle": "Razonamiento abierto con criterios explícitos de autoevaluación.",
+      "items": [
+        {
+          "id": "06-L3-01",
+          "type": "reflection",
+          "title": "τ y formación espectral",
+          "prompt": "Explique por qué diferentes longitudes de onda pueden emerger desde profundidades distintas de una atmósfera estelar.",
+          "resource": "Atmósferas",
+          "criteria": [
+            "Reconoce κλ dependiente de λ.",
+            "Relaciona κλ con τλ.",
+            "Concluye que τλ~1/2–1 selecciona profundidades diferentes."
+          ],
+          "guide": "La opacidad espectral conecta estructura atmosférica y espectro emergente."
+        },
+        {
+          "id": "06-L3-02",
+          "type": "reflection",
+          "title": "Extinción terrestre",
+          "prompt": "Explique cómo observaciones de una misma estrella a distintas alturas permiten estimar la intensidad sobre la atmósfera.",
+          "resource": "Atmósfera terrestre",
+          "criteria": [
+            "Usa sec z como masa de aire aproximada.",
+            "Reconoce linealidad de ln I con sec z.",
+            "Identifica intercepto como ln I0 y pendiente como -τ0."
+          ],
+          "guide": "A relação linear permite extrapolar para massa de ar zero."
+        },
+        {
+          "id": "06-L3-03",
+          "type": "reflection",
+          "title": "Ancho equivalente",
+          "prompt": "Explique por qué el ancho equivalente no es simplemente la FWHM de una línea.",
+          "resource": "Líneas",
+          "criteria": [
+            "Define W como área normalizada del déficit de flujo.",
+            "Distingue área integrada de largura a meia altura.",
+            "Reconoce que líneas con formas distintas pueden tener igual FWHM y diferente W."
+          ],
+          "guide": "FWHM mede largura em um nível; W mede área integrada."
+        }
+      ]
+    }
+  }
+}

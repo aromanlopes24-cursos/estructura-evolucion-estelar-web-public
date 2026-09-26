@@ -1,0 +1,73 @@
+{
+  "id": "04",
+  "title": "Fuentes de energía",
+  "subtitle": "Contracción, virial, fusión, energía de enlace y Gamow",
+  "next": "05 — Transporte de energía",
+  "materials": [
+    {
+      "label": "8b — Fuentes de energía estelar",
+      "file": "8b_fuentes_energia_estelar.pdf"
+    },
+    {
+      "label": "Curva de energía de enlace",
+      "file": "Energia_de_enlace.pdf"
+    },
+    {
+      "label": "Interacción p–p y factor de Gamow",
+      "file": "Interaccion_pp_Gamow.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "La energía química puede explicar la edad solar?",
+      "options": [
+        "No, su escala energética es demasiado pequeña",
+        "Sí, completamente",
+        "Sólo si no hay gravedad"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Compare energía por partícula y tiempo de vida."
+    },
+    {
+      "question": "La fusión de núcleos ligeros libera energía porque:",
+      "options": [
+        "Aumenta la energía de enlace por nucleón",
+        "Disminuye toda masa a cero",
+        "Elimina la fuerza fuerte"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Use la curva de energía de enlace."
+    },
+    {
+      "question": "El factor de Gamow está relacionado con:",
+      "options": [
+        "Tunelamiento de la barrera Coulombiana",
+        "Extinción interestelar",
+        "Magnitudes UBV"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Es física nuclear en el plasma estelar."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_entry": "app/app_lab.py",
+  "lab_version": "v1.0",
+  "lab_experiments": [
+    "Comparación de reservorios energético-temporales",
+    "Contracción gravitacional y escala Kelvin–Helmholtz",
+    "Energía nuclear disponible y escala temporal",
+    "Interpretación de la energía de enlace",
+    "Barrera Coulombiana y punto de retorno",
+    "Factor y ventana de Gamow"
+  ],
+  "levels_ready": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "levels_file": "levels.json"
+}

@@ -1,0 +1,205 @@
+{
+  "module": "07",
+  "version": "1.0",
+  "levels": {
+    "1": {
+      "title": "Comprensión conceptual",
+      "subtitle": "Conceptos y relaciones directas con feedback específico.",
+      "items": [
+        {
+          "id": "07-L1-01",
+          "type": "choice",
+          "title": "Muy baja masa",
+          "prompt": "Según el cuadro del curso, 0.08–0.3 M☉ corresponde a:",
+          "resource": "Tabla SP",
+          "options": [
+            "estrellas totalmente convectivas con p–p",
+            "CNO y exterior radiativo",
+            "sin fusión de H"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Ese es el régimen masivo.",
+            "Por encima de 0.08 M☉ el cuadro ya incluye fusión estable de H."
+          ]
+        },
+        {
+          "id": "07-L1-02",
+          "type": "choice",
+          "title": "Solar",
+          "prompt": "Para ~1 M☉, el resumen de SP indica:",
+          "resource": "Tabla SP",
+          "options": [
+            "interior radiativo y región externa convectiva",
+            "totalmente convectiva",
+            "núcleo convectivo y exterior radiativo"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Corresponde a menor masa.",
+            "Corresponde al régimen >1.2 M☉."
+          ]
+        },
+        {
+          "id": "07-L1-03",
+          "type": "choice",
+          "title": "CNO",
+          "prompt": "El material asocia CNO principalmente con:",
+          "resource": "Tabla SP",
+          "options": [
+            "M>1.2 M☉",
+            "M<0.08 M☉",
+            "todas las masas por igual"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No hay fusión estable de H en ese límite.",
+            "El cuadro distingue los regímenes."
+          ]
+        },
+        {
+          "id": "07-L1-04",
+          "type": "choice",
+          "title": "Temperatura CNO",
+          "prompt": "El material cita para CNO:",
+          "resource": "Fusión",
+          "options": [
+            "Tc>20 MK",
+            "Tc<1 MK",
+            "Tc exactamente 5770 K"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Demasiado baja.",
+            "Eso es una temperatura superficial solar aproximada."
+          ]
+        },
+        {
+          "id": "07-L1-05",
+          "type": "choice",
+          "title": "Límite inferior",
+          "prompt": "M<0.08 M☉ se interpreta en el resumen como:",
+          "resource": "Límites",
+          "options": [
+            "temperatura central insuficiente para fusión estable de H",
+            "CNO dominante",
+            "supergigante"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No.",
+            "No."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Aplicación y cálculo",
+      "subtitle": "Cálculos e interpretación usando las relaciones del módulo.",
+      "items": [
+        {
+          "id": "07-L2-01",
+          "type": "numeric",
+          "title": "Sensibilidad CNO",
+          "prompt": "Usando ε∝T^19 como exponente medio didáctico, calcule ε/ε0 para T/T0=1.10.",
+          "resource": "CNO",
+          "answer": 6.115909044841464,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Eleve 1.10 a 19.",
+          "solution": "≈6.12.",
+          "rel_tol": 0.01
+        },
+        {
+          "id": "07-L2-02",
+          "type": "numeric",
+          "title": "Tiempo nuclear relativo",
+          "prompt": "Si En se mantiene y L aumenta por factor 4, calcule tn/t0.",
+          "resource": "t_n=E_n/L",
+          "answer": 0.25,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use t=E/L.",
+          "solution": "1/4.",
+          "abs_tol": 0.005
+        },
+        {
+          "id": "07-L2-03",
+          "type": "numeric",
+          "title": "Combustible",
+          "prompt": "Si En disponible se duplica y L no cambia, calcule tn/t0.",
+          "resource": "t_n=E_n/L",
+          "answer": 2.0,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "El tiempo escala linealmente con E disponible.",
+          "solution": "2.",
+          "abs_tol": 0.02
+        },
+        {
+          "id": "07-L2-04",
+          "type": "numeric",
+          "title": "Umbral",
+          "prompt": "Una estrella de 0.10 M☉ está por encima del umbral 0.08 por cuántas M☉?",
+          "resource": "Límite",
+          "answer": 0.02,
+          "unit": "M☉",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Reste 0.08.",
+          "solution": "0.02 M☉.",
+          "abs_tol": 0.002
+        }
+      ]
+    },
+    "3": {
+      "title": "Desafío e interpretación",
+      "subtitle": "Razonamiento abierto con criterios explícitos de autoevaluación.",
+      "items": [
+        {
+          "id": "07-L3-01",
+          "type": "reflection",
+          "title": "Masa como organizador",
+          "prompt": "Explique por qué la masa puede organizar simultáneamente proceso nuclear, transporte y tiempo de vida en la secuencia principal.",
+          "resource": "SP",
+          "criteria": [
+            "Relaciona masa con condiciones centrales.",
+            "Conecta sensibilidad nuclear con distribución de luminosidad.",
+            "Relaciona luminosidad con escala de tiempo nuclear."
+          ],
+          "guide": "A massa altera as condições internas e, indiretamente, várias propriedades estruturais."
+        },
+        {
+          "id": "07-L3-02",
+          "type": "reflection",
+          "title": "Núcleo convectivo masivo",
+          "prompt": "Explique por qué una generación de energía muy concentrada y sensible a T puede favorecer un núcleo convectivo.",
+          "resource": "CNO",
+          "criteria": [
+            "Reconoce gran producción central de luminosidad.",
+            "Relaciona luminosidad con gradiente radiativo requerido.",
+            "Conecta gradiente alto con criterio convectivo."
+          ],
+          "guide": "Use o encadeamento energia → fluxo → gradiente → estabilidade."
+        },
+        {
+          "id": "07-L3-03",
+          "type": "reflection",
+          "title": "Límite subestelar",
+          "prompt": "Explique por qué M<0.08 M☉ se trata como un cambio físico cualitativo y no sólo como una estrella de SP un poco menos masiva.",
+          "resource": "Límites",
+          "criteria": [
+            "Identifica falta de fusión estable de H.",
+            "Distingue fuente gravitacional de quema nuclear sostenida.",
+            "Relaciona el límite con la definición física de secuencia principal."
+          ],
+          "guide": "O ponto-chave é a fonte de energia sustentada."
+        }
+      ]
+    }
+  }
+}

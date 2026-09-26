@@ -1,0 +1,305 @@
+{
+  "module": "00",
+  "version": "1.0",
+  "levels": {
+    "1": {
+      "title": "Comprensión conceptual",
+      "subtitle": "Definiciones, signos y relaciones directas. Cada error recibe feedback específico.",
+      "items": [
+        {
+          "id": "00-L1-01",
+          "type": "choice",
+          "title": "Propiedad intrínseca",
+          "prompt": "¿Cuál de las siguientes cantidades es una propiedad intrínseca de la estrella y no depende de la distancia al observador?",
+          "resource": "TEORÍA → Luminosidad y flujo",
+          "options": [
+            "Luminosidad L",
+            "Densidad de flujo F recibida por el telescopio",
+            "Tamaño angular aparente"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto. L es la energía total emitida por unidad de tiempo y pertenece a la fuente.",
+            "F depende de cómo la luminosidad se distribuye sobre una esfera de radio d; por tanto cambia con la distancia.",
+            "El tamaño angular es geométrico y cambia cuando cambia la distancia."
+          ]
+        },
+        {
+          "id": "00-L1-02",
+          "type": "choice",
+          "title": "Ley del inverso del cuadrado",
+          "prompt": "Una estrella conserva la misma luminosidad y pasa a estar al doble de distancia. ¿Qué ocurre con el flujo recibido?",
+          "resource": "TEORÍA → F = L/(4πd²)",
+          "options": [
+            "F pasa a F/4",
+            "F pasa a F/2",
+            "F no cambia",
+            "F aumenta a 4F"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto. Como F∝d⁻², duplicar d divide F por 2²=4.",
+            "Esta respuesta correspondería a una dependencia 1/d, no a la ley del inverso del cuadrado.",
+            "La luminosidad no cambia, pero el flujo observado sí depende de d.",
+            "Alejar la fuente no puede aumentar el flujo recibido manteniendo L fija."
+          ]
+        },
+        {
+          "id": "00-L1-03",
+          "type": "choice",
+          "title": "Stefan–Boltzmann",
+          "prompt": "Si el radio permanece fijo y Teff se duplica, ¿por qué factor cambia la luminosidad?",
+          "resource": "TEORÍA → L = 4πR²σTeff⁴",
+          "options": [
+            "2",
+            "4",
+            "8",
+            "16"
+          ],
+          "correct": 3,
+          "feedback": [
+            "La dependencia con Teff no es lineal.",
+            "El factor 4 correspondería a una potencia 2.",
+            "El factor 8 correspondería a una potencia 3.",
+            "Correcto. L∝Teff⁴, por lo que 2⁴=16."
+          ]
+        },
+        {
+          "id": "00-L1-04",
+          "type": "choice",
+          "title": "Intensidad específica",
+          "prompt": "¿Qué elemento adicional distingue a la intensidad específica Iν de una densidad de flujo espectral simple?",
+          "resource": "SÍMBOLOS + TEORÍA → dEν = Iν cosθ dA dν dω dt",
+          "options": [
+            "La dependencia por unidad de ángulo sólido y dirección",
+            "La masa de la estrella",
+            "La distancia solamente",
+            "El periodo orbital"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto. Iν describe energía por área, tiempo, frecuencia y ángulo sólido en una dirección.",
+            "La masa no forma parte de la definición de Iν.",
+            "La distancia no sustituye la información angular/direccional contenida en Iν.",
+            "El periodo orbital no aparece en la definición radiativa."
+          ]
+        },
+        {
+          "id": "00-L1-05",
+          "type": "choice",
+          "title": "El factor cosθ",
+          "prompt": "En dEν = Iν cosθ dA dν dω dt, ¿qué representa el factor cosθ?",
+          "resource": "MATERIAL DE CLASE → Intensidad, densidad de flujo y luminosidad",
+          "options": [
+            "La proyección de dA perpendicular a la dirección del haz",
+            "Una corrección por distancia",
+            "La absorción interestelar",
+            "La frecuencia del fotón"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto. dA cosθ es el área proyectada vista desde la dirección de propagación.",
+            "La dependencia geométrica con distancia no es el origen del factor cosθ en esta expresión.",
+            "No se está introduciendo absorción en esta definición.",
+            "La frecuencia está representada por ν y dν, no por cosθ."
+          ]
+        },
+        {
+          "id": "00-L1-06",
+          "type": "choice",
+          "title": "De intensidad a flujo",
+          "prompt": "¿Cómo se obtiene Fν a partir de Iν?",
+          "resource": "TEORÍA → Fν = ∫ Iν cosθ dω",
+          "options": [
+            "Integrando Iν cosθ sobre el ángulo sólido",
+            "Multiplicando Iν por d²",
+            "Derivando Iν respecto del tiempo",
+            "Dividiendo Iν por la luminosidad"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto. El flujo suma la contribución direccional de la intensidad mediante la integral angular.",
+            "d² aparece en la relación entre luminosidad y flujo de una fuente isotrópica, no en esta definición.",
+            "El flujo no se define como derivada temporal de Iν.",
+            "Esta operación no tiene el significado físico de la integral angular."
+          ]
+        },
+        {
+          "id": "00-L1-07",
+          "type": "choice",
+          "title": "Brillo superficial ideal",
+          "prompt": "En la aproximación no cosmológica y sin absorción, al alejar una fuente extendida, ¿qué ocurre con su brillo superficial?",
+          "resource": "TEORÍA → Brillo superficial",
+          "options": [
+            "Permanece constante",
+            "Disminuye como 1/d²",
+            "Aumenta como d²",
+            "Se hace idéntico a la luminosidad"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto. El flujo y el ángulo sólido aparente disminuyen ambos como 1/d², por lo que su cociente permanece constante.",
+            "El flujo total sí disminuye así, pero el área angular también lo hace.",
+            "No hay una razón geométrica para que el brillo superficial crezca con la distancia.",
+            "Luminosidad y brillo superficial son cantidades físicas distintas."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Aplicación y cálculo",
+      "subtitle": "Use explícitamente las relaciones del módulo. Las respuestas numéricas admiten redondeo.",
+      "items": [
+        {
+          "id": "00-L2-01",
+          "type": "numeric",
+          "title": "Cambio de distancia",
+          "prompt": "La distancia a una estrella se triplica, manteniendo L fija. Calcule Fnuevo/Fviejo.",
+          "resource": "F = L/(4πd²)",
+          "answer": 0.1111111111111111,
+          "abs_tol": 0.003,
+          "unit": "",
+          "correct_feedback": "Correcto: Fnuevo/Fviejo = 1/3² = 1/9.",
+          "wrong_feedback": "La luminosidad se mantiene; sólo cambia el factor d² del denominador.",
+          "solution": "Fnuevo/Fviejo = (dviejo/dnuevo)² = (1/3)² ≈ 0.111."
+        },
+        {
+          "id": "00-L2-02",
+          "type": "numeric",
+          "title": "Radio y temperatura",
+          "prompt": "Compare una estrella B con una referencia A. Si RB/RA=2 y Teff,B/Teff,A=0.5, calcule LB/LA.",
+          "resource": "L ∝ R² Teff⁴",
+          "answer": 0.25,
+          "abs_tol": 0.005,
+          "unit": "",
+          "correct_feedback": "Correcto. El radio aporta 2²=4 y la temperatura aporta 0.5⁴=1/16.",
+          "wrong_feedback": "Calcule por separado (RB/RA)² y (TB/TA)⁴ y luego multiplíquelos.",
+          "solution": "LB/LA = 2² × 0.5⁴ = 4/16 = 0.25."
+        },
+        {
+          "id": "00-L2-03",
+          "type": "numeric",
+          "title": "Inferir temperatura relativa",
+          "prompt": "Dos estrellas tienen el mismo radio. Si LB/LA=81, ¿cuánto vale Teff,B/Teff,A?",
+          "resource": "A radio fijo: L ∝ Teff⁴",
+          "answer": 3.0,
+          "abs_tol": 0.02,
+          "unit": "",
+          "correct_feedback": "Correcto. La razón de temperaturas es la raíz cuarta de 81.",
+          "wrong_feedback": "A radio fijo, tome la raíz cuarta de la razón de luminosidades.",
+          "solution": "Teff,B/Teff,A = 81^(1/4) = 3."
+        },
+        {
+          "id": "00-L2-04",
+          "type": "numeric",
+          "title": "Flujo desde intensidad isotrópica",
+          "prompt": "Para radiación isotrópica emergente por un hemisferio, F=πI. Si I=2.0×10^7 W m⁻² sr⁻¹, calcule F.",
+          "resource": "MATERIAL DE CLASE → F = πI",
+          "answer": 62831853.071795866,
+          "rel_tol": 0.01,
+          "unit": "W m⁻²",
+          "correct_feedback": "Correcto. La integración angular del hemisferio introduce el factor π.",
+          "wrong_feedback": "Use directamente F=πI y mantenga las unidades de flujo W m⁻².",
+          "solution": "F = π(2.0×10^7) ≈ 6.28×10^7 W m⁻²."
+        },
+        {
+          "id": "00-L2-05",
+          "type": "choice",
+          "title": "Flujo y ángulo sólido",
+          "prompt": "Una fuente extendida ideal se aleja a una distancia 5 veces mayor. ¿Qué combinación es correcta?",
+          "resource": "Brillo superficial: F/Ω",
+          "options": [
+            "F→F/25 y Ω→Ω/25, por lo que F/Ω no cambia",
+            "F→F/5 y Ω no cambia",
+            "F no cambia y Ω→Ω/25",
+            "F→25F y Ω→Ω/25"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto. Ambas cantidades geométricas escalan como d⁻².",
+            "El flujo sigue la ley del inverso del cuadrado y el ángulo sólido también cambia.",
+            "El flujo total de la fuente no permanece constante al aumentar d.",
+            "La fuente no entrega más flujo al alejarse."
+          ]
+        },
+        {
+          "id": "00-L2-06",
+          "type": "numeric",
+          "title": "Misma luminosidad, distinto flujo",
+          "prompt": "Dos estrellas tienen la misma luminosidad. Se observa FA/FB=9. Calcule dB/dA.",
+          "resource": "Para L igual: F ∝ 1/d²",
+          "answer": 3.0,
+          "abs_tol": 0.02,
+          "unit": "",
+          "correct_feedback": "Correcto. La estrella B, que entrega 9 veces menos flujo, está 3 veces más lejos.",
+          "wrong_feedback": "Escriba FA/FB = (dB/dA)² y luego tome la raíz cuadrada.",
+          "solution": "dB/dA = √9 = 3."
+        }
+      ]
+    },
+    "3": {
+      "title": "Desafío e interpretación",
+      "subtitle": "No hay corrección semántica automática. Escriba, compare y autoevalúe su razonamiento.",
+      "items": [
+        {
+          "id": "00-L3-01",
+          "type": "reflection",
+          "title": "Una misma estrella vista más lejos",
+          "prompt": "Considere dos copias idénticas de una estrella. A está a distancia d y B a 4d. Compare L, F, tamaño angular, intensidad de una porción resuelta y brillo superficial. Explique por qué las cantidades no cambian todas de la misma manera.",
+          "resource": "TEORÍA + LABORATORIO → Flujo, intensidad y brillo superficial",
+          "criteria": [
+            "Reconoce que LA=LB porque la luminosidad es intrínseca.",
+            "Obtiene FB=FA/16 a partir de la ley del inverso del cuadrado.",
+            "Indica que el área/ángulo sólido aparente disminuye también por un factor 16.",
+            "Distingue intensidad/brillo superficial ideal de flujo total.",
+            "Explica que no hay contradicción: cambia el tamaño angular, no la intensidad intrínseca por elemento resuelto."
+          ],
+          "guide": "Una respuesta completa separa propiedades de la fuente de cantidades dependientes de la geometría del observador."
+        },
+        {
+          "id": "00-L3-02",
+          "type": "reflection",
+          "title": "Degeneración luminosidad–distancia",
+          "prompt": "Dos estrellas producen exactamente el mismo flujo F en la Tierra. ¿Se puede concluir que tienen la misma luminosidad? Derive la relación entre sus luminosidades y distancias y explique qué información adicional sería necesaria.",
+          "resource": "F = L/(4πd²)",
+          "criteria": [
+            "Niega que el mismo flujo implique necesariamente la misma luminosidad.",
+            "Escribe L1/d1² = L2/d2² para flujo igual.",
+            "Deduce L2/L1 = (d2/d1)².",
+            "Identifica la distancia como información adicional necesaria para convertir flujo en luminosidad."
+          ],
+          "guide": "El observable F mezcla una propiedad intrínseca L con la geometría d."
+        },
+        {
+          "id": "00-L3-03",
+          "type": "reflection",
+          "title": "Misma luminosidad, radios diferentes",
+          "prompt": "Dos estrellas tienen la misma luminosidad, pero RB=4RA. Usando Stefan–Boltzmann, determine qué relación debe existir entre sus temperaturas efectivas y explique físicamente el resultado.",
+          "resource": "L = 4πR²σTeff⁴",
+          "criteria": [
+            "Parte de R_A² T_A⁴ = R_B² T_B⁴.",
+            "Con RB/RA=4, obtiene TB/TA=(RA/RB)^(1/2)=1/2.",
+            "Explica que una superficie mayor puede producir la misma potencia total con menor flujo radiativo por unidad de área.",
+            "No confunde temperatura efectiva con luminosidad."
+          ],
+          "guide": "Para L fija, Teff ∝ R^(-1/2). En este caso, la estrella cuatro veces mayor en radio tiene la mitad de Teff."
+        },
+        {
+          "id": "00-L3-04",
+          "type": "reflection",
+          "title": "¿Por qué el brillo superficial no cae como el flujo?",
+          "prompt": "Explique, sin usar sólo la frase 'porque se cancelan', por qué una fuente extendida ideal puede conservar brillo superficial cuando aumenta su distancia, aunque su flujo total disminuya.",
+          "resource": "TEORÍA → Brillo superficial e intensidad",
+          "criteria": [
+            "Reconoce que el flujo total recibido disminuye como d⁻².",
+            "Reconoce que el área angular aparente también disminuye como d⁻².",
+            "Interpreta el brillo superficial como flujo por unidad de ángulo sólido.",
+            "Aclara las hipótesis: fuente resuelta, sin absorción y aproximación no cosmológica.",
+            "Relaciona el resultado con la invariancia de la intensidad en propagación libre ideal."
+          ],
+          "guide": "La clave física es que el mismo flujo menor queda concentrado en un área angular correspondientemente menor."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "module": "01",
+  "version": "1.0",
+  "levels": {
+    "1": {
+      "title": "Comprensión conceptual",
+      "subtitle": "Magnitudes, distancia, extinción y color.",
+      "items": [
+        {
+          "id": "01-L1-01",
+          "type": "choice",
+          "title": "Magnitud y flujo",
+          "prompt": "Una fuente recibe 100 veces menos flujo. ¿Cómo cambia su magnitud?",
+          "resource": "TEORÍA → m1-m2 = -2.5 log10(F1/F2)",
+          "options": [
+            "Aumenta 5 mag",
+            "Disminuye 5 mag",
+            "Aumenta 100 mag"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: un factor 100 en flujo corresponde a 5 magnitudes.",
+            "Menos flujo significa una magnitud numéricamente mayor.",
+            "La escala es logarítmica, no lineal."
+          ]
+        },
+        {
+          "id": "01-L1-02",
+          "type": "choice",
+          "title": "Magnitud absoluta",
+          "prompt": "¿Qué representa la magnitud absoluta M?",
+          "resource": "TEORÍA → Magnitud absoluta y distancia",
+          "options": [
+            "La magnitud que tendría la fuente a 10 pc",
+            "La magnitud observada sin importar la distancia",
+            "La luminosidad expresada directamente en watts"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: M se define a una distancia estándar de 10 pc.",
+            "La magnitud aparente sí depende de distancia y extinción.",
+            "Magnitud y luminosidad están relacionadas, pero no son la misma cantidad."
+          ]
+        },
+        {
+          "id": "01-L1-03",
+          "type": "choice",
+          "title": "Módulo de distancia",
+          "prompt": "Sin extinción, una estrella situada exactamente a 10 pc cumple:",
+          "resource": "m-M = 5 log10(d/10 pc)",
+          "options": [
+            "m=M",
+            "m=M+5",
+            "m=M-5"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: log10(1)=0.",
+            "Eso corresponde a 100 pc, no 10 pc.",
+            "A 10 pc el módulo de distancia es cero."
+          ]
+        },
+        {
+          "id": "01-L1-04",
+          "type": "choice",
+          "title": "Espesor óptico",
+          "prompt": "Si τ aumenta, ¿qué ocurre con la transmisión e^-τ?",
+          "resource": "TEORÍA → L=L0 e^-τ",
+          "options": [
+            "Disminuye",
+            "Aumenta",
+            "No cambia"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: el exponente se hace más negativo.",
+            "Aumentar τ aumenta la atenuación.",
+            "La transmisión depende explícitamente de τ."
+          ]
+        },
+        {
+          "id": "01-L1-05",
+          "type": "choice",
+          "title": "Extinción en magnitudes",
+          "prompt": "Para una misma estrella a la misma distancia, una extinción A>0 hace que la magnitud aparente m:",
+          "resource": "m-M = 5 log10(d/10 pc)+A",
+          "options": [
+            "Aumente",
+            "Disminuya",
+            "Permanezca igual"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: la fuente se observa más débil y m aumenta.",
+            "Una magnitud menor correspondería a una fuente observacionalmente más brillante.",
+            "A entra como término positivo en el módulo observado."
+          ]
+        },
+        {
+          "id": "01-L1-06",
+          "type": "choice",
+          "title": "Exceso de color",
+          "prompt": "¿Cuál es la definición de E(B-V)?",
+          "resource": "TEORÍA → Enrojecimiento",
+          "options": [
+            "(B-V) - (B-V)0",
+            "(B-V)0 - (B-V)",
+            "B+V"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: exceso observado menos color intrínseco.",
+            "El signo está invertido.",
+            "Un índice de color es una diferencia de magnitudes."
+          ]
+        },
+        {
+          "id": "01-L1-07",
+          "type": "choice",
+          "title": "Enrojecimiento",
+          "prompt": "Si la luz azul es más afectada por el medio interestelar, el B-V observado normalmente:",
+          "resource": "TEORÍA → Enrojecimiento",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "Se hace exactamente cero"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: la fuente se observa más roja.",
+            "Eso correspondería a un desplazamiento hacia colores más azules.",
+            "No hay razón para que el color observado sea cero."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Aplicación y cálculo",
+      "subtitle": "Razones de flujo, módulo de distancia, τ, A y E(B-V).",
+      "items": [
+        {
+          "id": "01-L2-01",
+          "type": "numeric",
+          "title": "Factor 100 en flujo",
+          "prompt": "Calcule Δm para F1/F2=0.01.",
+          "resource": "Δm=-2.5 log10(F1/F2)",
+          "answer": 5.0,
+          "abs_tol": 0.02,
+          "unit": "mag",
+          "correct_feedback": "Correcto: una razón 0.01 produce +5 mag.",
+          "wrong_feedback": "Use log10(0.01)=-2.",
+          "solution": "Δm=-2.5(-2)=5 mag."
+        },
+        {
+          "id": "01-L2-02",
+          "type": "numeric",
+          "title": "Razón de flujos",
+          "prompt": "Si m1-m2=2.5 mag, calcule F1/F2.",
+          "resource": "F1/F2 = 10^(-0.4 Δm)",
+          "answer": 0.1,
+          "abs_tol": 0.003,
+          "unit": "",
+          "correct_feedback": "Correcto: 2.5 mag corresponden a un factor 10.",
+          "wrong_feedback": "Use 10^(-0.4×2.5).",
+          "solution": "F1/F2=10^-1=0.1."
+        },
+        {
+          "id": "01-L2-03",
+          "type": "numeric",
+          "title": "Módulo de distancia",
+          "prompt": "Sin extinción, una estrella tiene m-M=5 mag. Calcule d en parsecs.",
+          "resource": "m-M=5 log10(d/10 pc)",
+          "answer": 100.0,
+          "abs_tol": 0.5,
+          "unit": "pc",
+          "correct_feedback": "Correcto: μ=5 corresponde a 100 pc.",
+          "wrong_feedback": "Divida por 5 y despeje la potencia de 10.",
+          "solution": "d=10×10^(5/5)=100 pc."
+        },
+        {
+          "id": "01-L2-04",
+          "type": "numeric",
+          "title": "Transmisión para τ=1",
+          "prompt": "Calcule F/F0 para τ=1.",
+          "resource": "F/F0=e^-τ",
+          "answer": 0.36787944117144233,
+          "abs_tol": 0.003,
+          "unit": "",
+          "correct_feedback": "Correcto: e^-1≈0.368.",
+          "wrong_feedback": "Evalúe la exponencial e^-1.",
+          "solution": "F/F0≈0.3679."
+        },
+        {
+          "id": "01-L2-05",
+          "type": "numeric",
+          "title": "Extinción visual",
+          "prompt": "Usando AV≈3E(B-V), calcule AV para E(B-V)=0.20.",
+          "resource": "TEORÍA → AV≈3E(B-V)",
+          "answer": 0.6,
+          "abs_tol": 0.01,
+          "unit": "mag",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Multiplique el exceso de color por 3.",
+          "solution": "AV≈3×0.20=0.60 mag."
+        },
+        {
+          "id": "01-L2-06",
+          "type": "numeric",
+          "title": "Magnitud aparente con extinción",
+          "prompt": "Una estrella tiene MV=2.0 mag, d=100 pc y AV=0.6 mag. Calcule V.",
+          "resource": "V-MV = 5 log10(d/10 pc)+AV",
+          "answer": 7.6,
+          "abs_tol": 0.02,
+          "unit": "mag",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "A 100 pc el módulo geométrico es 5 mag; luego sume AV.",
+          "solution": "V=2.0+5.0+0.6=7.6 mag."
+        }
+      ]
+    },
+    "3": {
+      "title": "Desafío e interpretación",
+      "subtitle": "Razonamiento físico con autoevaluación explícita.",
+      "items": [
+        {
+          "id": "01-L3-01",
+          "type": "reflection",
+          "title": "El signo de la escala de magnitudes",
+          "prompt": "Explique por qué una fuente con menor flujo tiene una magnitud numéricamente mayor. Use la definición logarítmica y no sólo una regla memorizada.",
+          "resource": "m=-2.5 log10(F/F0)",
+          "criteria": [
+            "Reconoce el signo negativo en la definición.",
+            "Explica que disminuir F/F0 hace el logaritmo más negativo.",
+            "Concluye que el producto por -2.5 aumenta m.",
+            "Distingue brillo físico de valor numérico de magnitud."
+          ],
+          "guide": "La inversión de la escala surge matemáticamente del signo negativo."
+        },
+        {
+          "id": "01-L3-02",
+          "type": "reflection",
+          "title": "Distancia o extinción",
+          "prompt": "Una estrella aparece más débil de lo esperado. Explique por qué sólo su magnitud aparente no permite decidir si está más lejos o más extinguida.",
+          "resource": "m-M=5 log10(d/10 pc)+A",
+          "criteria": [
+            "Identifica que d y A aumentan el lado derecho.",
+            "Reconoce una degeneración observacional entre geometría y atenuación.",
+            "Indica que se necesita información adicional de distancia, color o extinción.",
+            "No interpreta A como una propiedad intrínseca de luminosidad."
+          ],
+          "guide": "Dos mecanismos físicamente distintos pueden aumentar m."
+        },
+        {
+          "id": "01-L3-03",
+          "type": "reflection",
+          "title": "Color intrínseco y color observado",
+          "prompt": "Explique qué información contiene E(B-V) y por qué un E(B-V)>0 no significa que la estrella sea intrínsecamente fría.",
+          "resource": "E(B-V)=(B-V)-(B-V)0",
+          "criteria": [
+            "Distingue color observado de color intrínseco.",
+            "Interpreta E(B-V) como efecto diferencial del medio.",
+            "Reconoce que el enrojecimiento puede imitar una distribución espectral más roja.",
+            "Separa temperatura estelar de modificación interestelar."
+          ],
+          "guide": "El color observado combina propiedades de la fuente y del medio."
+        },
+        {
+          "id": "01-L3-04",
+          "type": "reflection",
+          "title": "De τ a magnitudes",
+          "prompt": "Partiendo de F/F0=e^-τ y Δm=-2.5log10(F/F0), derive la relación entre A y τ y explique qué significa físicamente.",
+          "resource": "LABORATORIO → Extinción en magnitudes",
+          "criteria": [
+            "Sustituye e^-τ dentro del logaritmo.",
+            "Usa log10(e^-τ)=-τ log10(e).",
+            "Obtiene A=2.5 log10(e) τ≈1.086τ.",
+            "Interpreta A y τ como dos maneras de cuantificar la misma atenuación en este modelo."
+          ],
+          "guide": "El factor 1.086 aparece al convertir una exponencial natural en escala logarítmica de base 10."
+        }
+      ]
+    }
+  }
+}

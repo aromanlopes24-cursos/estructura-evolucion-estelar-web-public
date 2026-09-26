@@ -1,0 +1,205 @@
+{
+  "module": "03",
+  "version": "1.0",
+  "levels": {
+    "1": {
+      "title": "Comprensión conceptual",
+      "subtitle": "Conceptos y relaciones directas con feedback específico.",
+      "items": [
+        {
+          "id": "03-L1-01",
+          "type": "choice",
+          "title": "Relación politrópica",
+          "prompt": "Un polítropo se cierra mediante:",
+          "resource": "NOTAS",
+          "options": [
+            "P=Kρ^(1+1/n)",
+            "F=L/(4πd²)",
+            "m-M=5log(d/10pc)"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Es una relación radiativa/geométrica.",
+            "Es fotometría."
+          ]
+        },
+        {
+          "id": "03-L1-02",
+          "type": "choice",
+          "title": "Índice n",
+          "prompt": "Para n=1.5, γpol=1+1/n vale:",
+          "resource": "SÍMBOLOS",
+          "options": [
+            "5/3",
+            "4/3",
+            "2"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Ese valor corresponde a n=3.",
+            "No corresponde a n=1.5."
+          ]
+        },
+        {
+          "id": "03-L1-03",
+          "type": "choice",
+          "title": "Gradiente politrópico",
+          "prompt": "∇pol=1/(n+1). Para n=1.5 vale:",
+          "resource": "SÍMBOLOS",
+          "options": [
+            "0.4",
+            "0.67",
+            "1.5"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No es 1/n.",
+            "El gradiente es adimensional y menor que 1."
+          ]
+        },
+        {
+          "id": "03-L1-04",
+          "type": "choice",
+          "title": "Superficie",
+          "prompt": "Para los modelos usados en el laboratorio con 0<n<5, la superficie se identifica por:",
+          "resource": "Lane–Emden",
+          "options": [
+            "El primer cero de θ",
+            "El máximo de θ",
+            "θ=1 en el borde"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "θ es máxima en el centro.",
+            "θ≈1 define el centro normalizado."
+          ]
+        },
+        {
+          "id": "03-L1-05",
+          "type": "choice",
+          "title": "Escalamiento",
+          "prompt": "Si el estudiante introduce M y R para escalar el polítropo, éstos deben interpretarse como:",
+          "resource": "LABORATORIO",
+          "options": [
+            "Entradas del escalamiento",
+            "Predicciones independientes",
+            "Constantes de Lane–Emden"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No son dos predicciones adicionales.",
+            "Lane–Emden es adimensional antes del escalamiento."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Aplicación y cálculo",
+      "subtitle": "Cálculos e interpretación usando las relaciones del módulo.",
+      "items": [
+        {
+          "id": "03-L2-01",
+          "type": "numeric",
+          "title": "γpol",
+          "prompt": "Calcule γpol para n=3.",
+          "resource": "γpol=1+1/n",
+          "answer": 1.3333333333333333,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use 1+1/n.",
+          "solution": "γpol=1+1/3=4/3.",
+          "abs_tol": 0.005
+        },
+        {
+          "id": "03-L2-02",
+          "type": "numeric",
+          "title": "∇pol",
+          "prompt": "Calcule ∇pol para n=3.",
+          "resource": "∇pol=1/(n+1)",
+          "answer": 0.25,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use 1/(n+1).",
+          "solution": "1/4=0.25.",
+          "abs_tol": 0.005
+        },
+        {
+          "id": "03-L2-03",
+          "type": "numeric",
+          "title": "Densidad media",
+          "prompt": "Una esfera de masa M y radio R tiene ρmedia=3M/(4πR³). Si R se duplica con M fija, calcule ρmedia,nueva/ρmedia,vieja.",
+          "resource": "Escalamiento",
+          "answer": 0.125,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "La densidad media escala como R^-3.",
+          "solution": "2^-3=1/8.",
+          "abs_tol": 0.003
+        },
+        {
+          "id": "03-L2-04",
+          "type": "numeric",
+          "title": "Radio relativo",
+          "prompt": "Si r/R=0.75, ¿qué porcentaje del radio total representa?",
+          "resource": "Perfiles",
+          "answer": 75.0,
+          "unit": "%",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Multiplique la fracción por 100.",
+          "solution": "0.75=75%.",
+          "abs_tol": 0.1
+        }
+      ]
+    },
+    "3": {
+      "title": "Desafío e interpretación",
+      "subtitle": "Razonamiento abierto con criterios explícitos de autoevaluación.",
+      "items": [
+        {
+          "id": "03-L3-01",
+          "type": "reflection",
+          "title": "Adimensional vs físico",
+          "prompt": "Explique la diferencia entre resolver θ(ξ) y asignar después M y R al modelo.",
+          "resource": "Lane–Emden",
+          "criteria": [
+            "Distingue forma adimensional de escala física.",
+            "Reconoce que ξ y θ no tienen unidades.",
+            "Explica que M y R fijan a, ρc y K."
+          ],
+          "guide": "Lane–Emden determina la forma; el escalamiento determina unidades y magnitudes físicas."
+        },
+        {
+          "id": "03-L3-02",
+          "type": "reflection",
+          "title": "Comparar n",
+          "prompt": "Explique qué información física se obtiene al comparar perfiles con diferentes n.",
+          "resource": "LABORATORIO",
+          "criteria": [
+            "Relaciona n con concentración/compresibilidad efectiva.",
+            "Compara perfiles de densidad o masa.",
+            "Evita afirmar que un único n describe exactamente toda estrella real."
+          ],
+          "guide": "El índice n organiza familias estructurales idealizadas."
+        },
+        {
+          "id": "03-L3-03",
+          "type": "reflection",
+          "title": "BHAC15",
+          "prompt": "¿Por qué comparar un polítropo escalado con BHAC15 es más informativo que verificar sólo que reproduce M y R?",
+          "resource": "BHAC15",
+          "criteria": [
+            "Reconoce que M y R ya fueron impuestos.",
+            "Propone comparar ρc, Tc, inercia o región radiativa.",
+            "Distingue ajuste por construcción de predicción independiente."
+          ],
+          "guide": "La prueba útil está en cantidades estructurales no usadas para escalar el modelo."
+        }
+      ]
+    }
+  }
+}

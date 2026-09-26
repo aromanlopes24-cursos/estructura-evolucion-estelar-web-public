@@ -1,0 +1,69 @@
+{
+  "id": "07",
+  "title": "Secuencia principal",
+  "subtitle": "Masa, fusión y estructura interna",
+  "next": "08 — Evolución post-ZAMS",
+  "materials": [
+    {
+      "label": "Estructura de las estrellas en la secuencia principal",
+      "file": "Estructura_secuencia_principal.pdf"
+    },
+    {
+      "label": "Clase de evolución estelar",
+      "file": "Clase_evolucion_estelar.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "Al aumentar mucho la masa, el proceso nuclear dominante tiende a pasar de pp a:",
+      "options": [
+        "CNO",
+        "Extinción",
+        "Conducción atmosférica"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "CNO es más sensible a T."
+    },
+    {
+      "question": "Una dependencia ε(T) muy concentrada en el centro favorece:",
+      "options": [
+        "Núcleo convectivo",
+        "Ausencia de gradiente",
+        "Densidad uniforme"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "La luminosidad central concentrada eleva el gradiente requerido."
+    },
+    {
+      "question": "Las estrellas más masivas suelen vivir en SP:",
+      "options": [
+        "Menos tiempo",
+        "Más tiempo",
+        "Exactamente el mismo tiempo"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Su luminosidad crece muy rápidamente con masa."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_entry": "app/app_lab.py",
+  "lab_version": "v1.0",
+  "lab_experiments": [
+    "Mapa de masa de la secuencia principal",
+    "Regímenes p–p y CNO",
+    "Arquitectura convectiva/radiativa",
+    "Límites 0.08 y 100 Msun",
+    "Escala relativa de tiempo nuclear",
+    "Síntesis por masa"
+  ],
+  "levels_ready": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "levels_file": "levels.json"
+}

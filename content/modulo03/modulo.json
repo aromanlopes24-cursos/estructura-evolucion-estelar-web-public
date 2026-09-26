@@ -1,0 +1,66 @@
+{
+  "id": "03",
+  "title": "Polítropos y Lane–Emden",
+  "subtitle": "Cierre P–ρ, estructura adimensional y escalamiento físico",
+  "next": "04 — Fuentes de energía",
+  "materials": [
+    {
+      "label": "8a — Interiores estelares",
+      "file": "8a_interior_estelar.pdf"
+    },
+    {
+      "label": "Material complementario — Estructura estelar / Sol",
+      "file": "Material_complementario_Estructura_estelar_El_Sol.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "Para un polítropo, P=Kρ^(1+1/n). Si n=1.5, γpol es:",
+      "options": [
+        "5/3",
+        "4/3",
+        "1"
+      ],
+      "correct": 0,
+      "ok": "Correcto: 1+1/1.5=5/3.",
+      "bad": "Use γpol=1+1/n."
+    },
+    {
+      "question": "En un modelo Lane–Emden escalado con M y R observados, M y R son:",
+      "options": [
+        "Entradas de escalamiento",
+        "Predicciones independientes del mismo ajuste",
+        "Constantes universales"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "M y R fijan la escala física del perfil adimensional."
+    },
+    {
+      "question": "Al aumentar n, la concentración central de un polítropo suele:",
+      "options": [
+        "Aumentar",
+        "Disminuir siempre a cero",
+        "Permanecer idéntica"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Índices mayores representan perfiles más concentrados."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_experiments": [
+    "Solución Lane–Emden",
+    "Perfiles adimensionales",
+    "Escalamiento M–R",
+    "Dependencia con n",
+    "Comparación BHAC15"
+  ],
+  "levels_ready": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "levels_file": "levels.json"
+}

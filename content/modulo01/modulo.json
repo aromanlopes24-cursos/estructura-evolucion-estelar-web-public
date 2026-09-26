@@ -1,0 +1,59 @@
+{
+  "id": "01",
+  "title": "Fotometría y extinción",
+  "subtitle": "Magnitudes, colores, módulo de distancia y espesor óptico",
+  "next": "02 — Estructura mecánica",
+  "materials": [
+    {
+      "label": "Clase 1 — Fotometría y magnitudes",
+      "file": "Estelar_Clase_1.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "Una fuente se hace 100 veces más débil en flujo. ¿Cómo cambia aproximadamente su magnitud?",
+      "options": [
+        "Aumenta 5 mag",
+        "Disminuye 5 mag",
+        "Aumenta 100 mag"
+      ],
+      "correct": 0,
+      "ok": "Correcto: 100 = 10² y 2.5×2=5.",
+      "bad": "Use la razón de flujos dentro del logaritmo."
+    },
+    {
+      "question": "Si τ aumenta, ¿qué ocurre con la transmisión e^-τ?",
+      "options": [
+        "Disminuye",
+        "Aumenta",
+        "No cambia"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Mire el signo del exponente."
+    },
+    {
+      "question": "El enrojecimiento interestelar normalmente hace B-V:",
+      "options": [
+        "Mayor",
+        "Menor",
+        "Exactamente cero"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "La luz azul es más afectada."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_entry": "app/app_lab.py",
+  "lab_version": "v1.0",
+  "lab_experiments": [
+    "Magnitud y flujo — relación de Pogson",
+    "Módulo de distancia",
+    "Espesor óptico y atenuación exponencial",
+    "Extinción en magnitudes",
+    "Índice de color, E(B-V) y A_V",
+    "Síntesis fotométrica"
+  ]
+}

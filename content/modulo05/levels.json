@@ -1,0 +1,205 @@
+{
+  "module": "05",
+  "version": "1.0",
+  "levels": {
+    "1": {
+      "title": "Comprensión conceptual",
+      "subtitle": "Conceptos y relaciones directas con feedback específico.",
+      "items": [
+        {
+          "id": "05-L1-01",
+          "type": "choice",
+          "title": "Camino libre",
+          "prompt": "λ=1/(κρ). Si κ aumenta:",
+          "resource": "8c",
+          "options": [
+            "λ disminuye",
+            "λ aumenta",
+            "λ no cambia"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Es inversamente proporcional.",
+            "Depende de κ."
+          ]
+        },
+        {
+          "id": "05-L1-02",
+          "type": "choice",
+          "title": "Gradiente radiativo",
+          "prompt": "Si L aumenta con otras variables fijas, |dT/dr|rad:",
+          "resource": "Transporte radiativo",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "No cambia"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "La ecuación es proporcional a L.",
+            "L entra explícitamente."
+          ]
+        },
+        {
+          "id": "05-L1-03",
+          "type": "choice",
+          "title": "Temperatura",
+          "prompt": "En la expresión radiativa de las notas, |gradT|rad∝T^-3. Si T aumenta:",
+          "resource": "Material complementario",
+          "options": [
+            "El gradiente requerido disminuye",
+            "Aumenta",
+            "No cambia"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "El exponente es negativo.",
+            "Existe una dependencia fuerte con T."
+          ]
+        },
+        {
+          "id": "05-L1-04",
+          "type": "choice",
+          "title": "Schwarzschild",
+          "prompt": "Si |grad_rad|>|grad_ad|, la capa tiende a:",
+          "resource": "Convección",
+          "options": [
+            "Convección",
+            "Radiación estable",
+            "Isotermicidad obligatoria"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "El gradiente radiativo requerido es demasiado pronunciado.",
+            "No sigue del criterio."
+          ]
+        },
+        {
+          "id": "05-L1-05",
+          "type": "choice",
+          "title": "Gas monoatómico",
+          "prompt": "Para γ=5/3, ∇ad=(γ-1)/γ es:",
+          "resource": "Termodinámica",
+          "options": [
+            "0.4",
+            "1.0",
+            "0.1"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No.",
+            "No."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Aplicación y cálculo",
+      "subtitle": "Cálculos e interpretación usando las relaciones del módulo.",
+      "items": [
+        {
+          "id": "05-L2-01",
+          "type": "numeric",
+          "title": "∇ad",
+          "prompt": "Calcule ∇ad para γ=5/3.",
+          "resource": "∇ad",
+          "answer": 0.4,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use (γ-1)/γ.",
+          "solution": "(2/3)/(5/3)=2/5=0.4.",
+          "abs_tol": 0.005
+        },
+        {
+          "id": "05-L2-02",
+          "type": "numeric",
+          "title": "Camino libre",
+          "prompt": "Si κ se duplica y ρ no cambia, calcule λnuevo/λviejo.",
+          "resource": "λ=1/(κρ)",
+          "answer": 0.5,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "λ∝κ^-1.",
+          "solution": "La razón es 1/2.",
+          "abs_tol": 0.01
+        },
+        {
+          "id": "05-L2-03",
+          "type": "numeric",
+          "title": "T^-3",
+          "prompt": "Si T se duplica con el resto fijo, calcule |grad_rad,nuevo|/|grad_rad,viejo|.",
+          "resource": "grad_rad∝T^-3",
+          "answer": 0.125,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use 2^-3.",
+          "solution": "1/8=0.125.",
+          "abs_tol": 0.003
+        },
+        {
+          "id": "05-L2-04",
+          "type": "numeric",
+          "title": "Opacidad",
+          "prompt": "Si κ aumenta por un factor 3 con lo demás fijo, calcule la razón de gradientes radiativos.",
+          "resource": "grad_rad∝κ",
+          "answer": 3.0,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "La dependencia es lineal en κ.",
+          "solution": "La razón es 3.",
+          "abs_tol": 0.02
+        }
+      ]
+    },
+    "3": {
+      "title": "Desafío e interpretación",
+      "subtitle": "Razonamiento abierto con criterios explícitos de autoevaluación.",
+      "items": [
+        {
+          "id": "05-L3-01",
+          "type": "reflection",
+          "title": "Radiación y convección",
+          "prompt": "Explique físicamente por qué una opacidad alta puede favorecer la convección.",
+          "resource": "8c",
+          "criteria": [
+            "Relaciona opacidad alta con difusión radiativa menos eficiente.",
+            "Indica que aumenta el gradiente requerido.",
+            "Conecta el exceso sobre el gradiente adiabático con inestabilidad convectiva."
+          ],
+          "guide": "No basta decir 'κ aumenta convección'; explique la cadena causal."
+        },
+        {
+          "id": "05-L3-02",
+          "type": "reflection",
+          "title": "Burbuja",
+          "prompt": "Describa qué ocurre con una burbuja que asciende adiabáticamente y queda más caliente y menos densa que su entorno.",
+          "resource": "Material complementario",
+          "criteria": [
+            "Mantiene aproximadamente equilibrio de presión.",
+            "Se expande y enfría adiabáticamente.",
+            "Si queda menos densa continúa ascendiendo."
+          ],
+          "guide": "La flotabilidad surge de la diferencia de densidad a presión comparable."
+        },
+        {
+          "id": "05-L3-03",
+          "type": "reflection",
+          "title": "Sol",
+          "prompt": "Explique por qué el material del curso describe interior radiativo y envoltura convectiva en el Sol.",
+          "resource": "Sol",
+          "criteria": [
+            "Reconoce variación de T y opacidad con radio.",
+            "Relaciona T baja externa con aumento de grad_rad.",
+            "Distingue zonas de transporte sin suponer un único mecanismo global."
+          ],
+          "guide": "El mecanismo dominante puede cambiar dentro de una misma estrella."
+        }
+      ]
+    }
+  }
+}

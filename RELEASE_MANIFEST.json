@@ -1,0 +1,457 @@
+{
+  "release": "web-v1.2",
+  "generated_at": "2026-09-26T09:10:33.415658+00:00",
+  "source_root": "/home/roman/work/2026/cursos/clasificacion_estelar_I/tutoriais/estructura_evolucion_estelar_web_v1",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 120,
+      "sha256": "68d933d1a5e7993106345373a35cf4305364712d795f0a55eb9355d99aa88d9a"
+    },
+    {
+      "path": ".streamlit/config.toml",
+      "bytes": 181,
+      "sha256": "5eeab8071ee1520370c0686cb84aad9179ecba1632112e06cfdbebb5eb50ad92"
+    },
+    {
+      "path": "DEPLOY_GITHUB_STREAMLIT.md",
+      "bytes": 2377,
+      "sha256": "f77b78b620b2e814cc56524f715f4ac1f3a544c5e2fb03254ef15b1cc8ad31f8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 413,
+      "sha256": "cabaa71506736b21c4e7db4d127697b0d20f4647fbd3c8dbe0d4f438b2d3cf9e"
+    },
+    {
+      "path": "app.py",
+      "bytes": 9477,
+      "sha256": "fb90c9b8f2e660a3618d755d1b20375501a82042c6d12308fefe86f4324ba276"
+    },
+    {
+      "path": "assets/stellar_evolution_icon.png",
+      "bytes": 1949937,
+      "sha256": "6829c3b926587fde0b577f043490b717eec369b52d0aa391272e9d8e30b346b0"
+    },
+    {
+      "path": "content/modulo00/LABORATORIO_PLAN.md",
+      "bytes": 1278,
+      "sha256": "0ebb5c60747b95127195306e683e80c74b9e3895c2ebdc065df98333f6477c06"
+    },
+    {
+      "path": "content/modulo00/NOTAS_ESTUDIO.md",
+      "bytes": 1802,
+      "sha256": "5aded4942338684eae7329ae917be4c3f4eda5c9abad952a98f2c550993233dc"
+    },
+    {
+      "path": "content/modulo00/SIMBOLOS.md",
+      "bytes": 394,
+      "sha256": "4d454c8bf0188d801bea4725737f5b6b661023f862fe7c3bb76a7862986d316c"
+    },
+    {
+      "path": "content/modulo00/levels.json",
+      "bytes": 14837,
+      "sha256": "39ee2b38fdbee2b922e1dc4ca082f5d6d0f3f9d2ad5ff9b5868fe4d55f1b6e56"
+    },
+    {
+      "path": "content/modulo00/modulo.json",
+      "bytes": 1943,
+      "sha256": "75a2968587f71510047996c5af2ab896d361c2cc6578ea0221b4a03f6c926228"
+    },
+    {
+      "path": "content/modulo01/LABORATORIO_PLAN.md",
+      "bytes": 1271,
+      "sha256": "8368266b5ee88ec74bb2f6135de630ea8c8099f106ba4e3501e97b0849575219"
+    },
+    {
+      "path": "content/modulo01/NOTAS_ESTUDIO.md",
+      "bytes": 1440,
+      "sha256": "a9fbdc2530fb758054802e855b8346433a69bd4a2969c3e49ca36de3d6d8a977"
+    },
+    {
+      "path": "content/modulo01/SIMBOLOS.md",
+      "bytes": 336,
+      "sha256": "57f962d6274d0da57746a1207720be8d43f594a445d1a6fac21e77b3cdcb5ece"
+    },
+    {
+      "path": "content/modulo01/levels.json",
+      "bytes": 10982,
+      "sha256": "c069cb90ee325c4c167a176a4b901b2d2c03ad9d9ca18a9128f4f62614e6f74f"
+    },
+    {
+      "path": "content/modulo01/modulo.json",
+      "bytes": 1574,
+      "sha256": "5a5b8847ed726673be84bcac050d9ff6ff163628e7fa64152e6115d575872e16"
+    },
+    {
+      "path": "content/modulo02/LABORATORIO_PLAN.md",
+      "bytes": 1345,
+      "sha256": "1eede9cdcf14f32e28405ef4152d63deee1e22a8947cea0e29e65449ffdc1971"
+    },
+    {
+      "path": "content/modulo02/NOTAS_ESTUDIO.md",
+      "bytes": 1005,
+      "sha256": "80a4731a84094a03028878a2b7d4b2dd50760c644419eeb0c635a5bbf79b2009"
+    },
+    {
+      "path": "content/modulo02/SIMBOLOS.md",
+      "bytes": 173,
+      "sha256": "c8fdd664ba6bb36557c107fdacf09ab1d91d35ae1ea082b865022d4fb4ced97b"
+    },
+    {
+      "path": "content/modulo02/levels.json",
+      "bytes": 7115,
+      "sha256": "22f780ef3f75c66dc54fd19f73024896126b42c2ce2862bad3a4d7c8e66ef9cd"
+    },
+    {
+      "path": "content/modulo02/modulo.json",
+      "bytes": 1852,
+      "sha256": "f137305fdee46bed8ee6cab5899994cbcf86efc61134903ba98861c1c226a9d8"
+    },
+    {
+      "path": "content/modulo03/LABORATORIO_PLAN.md",
+      "bytes": 791,
+      "sha256": "1b5231822d54206fb5a34fbb27eb48a25ded11e8a371ebf4730a6b01fab77de6"
+    },
+    {
+      "path": "content/modulo03/NOTAS_ESTUDIO.md",
+      "bytes": 5764,
+      "sha256": "3f7a7c04b4c8246b25b537c1fb33ff8eed159b5baa077ce063d953ad37bab9b7"
+    },
+    {
+      "path": "content/modulo03/SIMBOLOS.md",
+      "bytes": 1474,
+      "sha256": "d5f9778f9053e81de972045d87105e331138320bc15055f76bba755c838ffff2"
+    },
+    {
+      "path": "content/modulo03/levels.json",
+      "bytes": 6761,
+      "sha256": "16e8f8a352bf5e6e93ecb976e8f100c7426c511a04b9b5f606e7ef5d4818ae2d"
+    },
+    {
+      "path": "content/modulo03/modulo.json",
+      "bytes": 1736,
+      "sha256": "61781c17b7e2eaaab538c3efde5e708492de0ee5d8d3994c0e4dc2d53b8ca3c2"
+    },
+    {
+      "path": "content/modulo04/LABORATORIO_PLAN.md",
+      "bytes": 1526,
+      "sha256": "3f1b9eacb2b168a710d665368a00f6101b07fa8a45c4bc38163dffd616af1b2d"
+    },
+    {
+      "path": "content/modulo04/NOTAS_ESTUDIO.md",
+      "bytes": 1930,
+      "sha256": "323b8a55286d09916d49a3cf069097dbe86acab7fd42a93825821472b0ccccf8"
+    },
+    {
+      "path": "content/modulo04/SIMBOLOS.md",
+      "bytes": 332,
+      "sha256": "203b1374e053d97dd7d507633e8201c4c1b520bcaa48bd3ee95db3b3d011617e"
+    },
+    {
+      "path": "content/modulo04/levels.json",
+      "bytes": 7184,
+      "sha256": "330e2a671788f688f26d688d1441ab60dc79d404e14ff26245a24ad5c877a6c9"
+    },
+    {
+      "path": "content/modulo04/modulo.json",
+      "bytes": 2065,
+      "sha256": "8343f4dcf42360330e963337d64a8d57e7e2f8389c99f518143b11c13a296124"
+    },
+    {
+      "path": "content/modulo05/LABORATORIO_PLAN.md",
+      "bytes": 1693,
+      "sha256": "d62147b516b520637eb5c8ffafc4e530d955bec31371cd96ed33785f43c39826"
+    },
+    {
+      "path": "content/modulo05/NOTAS_ESTUDIO.md",
+      "bytes": 1415,
+      "sha256": "a656d5b229c119cdf5f3564d518fab48f3458c00fcab9861fe9cbf30014ef9f4"
+    },
+    {
+      "path": "content/modulo05/SIMBOLOS.md",
+      "bytes": 221,
+      "sha256": "3661dbcf47258652a64393657b386b59a285e0becec9717271b78c19d7e03930"
+    },
+    {
+      "path": "content/modulo05/levels.json",
+      "bytes": 6672,
+      "sha256": "78ace45ec2d88f193abfd24f383aee1e219ee8c53123d3f6a2c5665053158cb6"
+    },
+    {
+      "path": "content/modulo05/modulo.json",
+      "bytes": 1683,
+      "sha256": "b23e4b46b357bf516885b07ba0fda8b90e3c6b0146ad9e01b8708f8ee52ebe04"
+    },
+    {
+      "path": "content/modulo06/LABORATORIO_PLAN.md",
+      "bytes": 2206,
+      "sha256": "553c244223cf20d78a54aea9e4f79f41d1b05e70285841d143dded0fe09e5597"
+    },
+    {
+      "path": "content/modulo06/NOTAS_ESTUDIO.md",
+      "bytes": 1450,
+      "sha256": "f7c776bd012284c9f3e3d86f29aed46ad131d23ba3a4915c47c2e87e49cbaebc"
+    },
+    {
+      "path": "content/modulo06/SIMBOLOS.md",
+      "bytes": 255,
+      "sha256": "af246e7c75d413043347df66b120121def0a674fd5e28dc402038fdd78804261"
+    },
+    {
+      "path": "content/modulo06/levels.json",
+      "bytes": 6593,
+      "sha256": "951a6bac3dba07b2c350a06a4ef8764d451d48dcc04ddac5aa2f8fdc8926e47a"
+    },
+    {
+      "path": "content/modulo06/modulo.json",
+      "bytes": 1785,
+      "sha256": "b8c5c0e49c538ab253255e2e6c2e14a919320a10ed04940593f5c458a966be0a"
+    },
+    {
+      "path": "content/modulo07/LABORATORIO_PLAN.md",
+      "bytes": 2387,
+      "sha256": "3959cb1a3b1c2440e0f40fb30ea1a94b47e5178bb99f24413aca094269d6e1bf"
+    },
+    {
+      "path": "content/modulo07/NOTAS_ESTUDIO.md",
+      "bytes": 1519,
+      "sha256": "bb525d4a68cb6cf36beb73bfd14590f558508a777eb041dfa1163a1c6b24fa64"
+    },
+    {
+      "path": "content/modulo07/SIMBOLOS.md",
+      "bytes": 223,
+      "sha256": "4d64ee8c6ff2a86599fbc2809568c38cd2e9a32b857dff7d72a70991df105e5a"
+    },
+    {
+      "path": "content/modulo07/levels.json",
+      "bytes": 6962,
+      "sha256": "0e8992e44ccb2f0a5dc930d3f86f2e517cc33ffea0854e1abd30190cd035590a"
+    },
+    {
+      "path": "content/modulo07/modulo.json",
+      "bytes": 1815,
+      "sha256": "924d9a79480542406516d5f2d7f04fff0125868010ee914f50e4d1e0930de28a"
+    },
+    {
+      "path": "content/modulo08/LABORATORIO_PLAN.md",
+      "bytes": 2608,
+      "sha256": "6e700a6182b20cd31e5116783d35fa84a330b493b07c50a12e849a8dc2c96ee1"
+    },
+    {
+      "path": "content/modulo08/NOTAS_ESTUDIO.md",
+      "bytes": 1731,
+      "sha256": "1ba624555bfbed4740c3551ad3e667613204a2a2e1155a599b96ab0823752c06"
+    },
+    {
+      "path": "content/modulo08/SIMBOLOS.md",
+      "bytes": 328,
+      "sha256": "60d8245c5a80e3721e765d281a4edccc7511dae48af7d19e1cfaaa777f85c836"
+    },
+    {
+      "path": "content/modulo08/levels.json",
+      "bytes": 6816,
+      "sha256": "7ee561c766ba82b242a276d7dce5a680d1c545763047ad989ab61f68e02e06bb"
+    },
+    {
+      "path": "content/modulo08/modulo.json",
+      "bytes": 2468,
+      "sha256": "556123ab60b964a46aa4da918a058d93acd5fd5d09b71bf7bebf66759fd6decd"
+    },
+    {
+      "path": "core/__pycache__/atmosphere_core.cpython-312.pyc",
+      "bytes": 6979,
+      "sha256": "999fe51d0f25edbf2fa5433d7a0dc99d0393d1397ccd922bfe0f9a85a0a2bc5c"
+    },
+    {
+      "path": "core/__pycache__/energy_core.cpython-312.pyc",
+      "bytes": 7509,
+      "sha256": "32cd18dbd48512b2b368c681239d42d4a0f33a830d1c5c74c427745efb6b8ba1"
+    },
+    {
+      "path": "core/__pycache__/lane_emden_core.cpython-312.pyc",
+      "bytes": 8568,
+      "sha256": "1e81c7252826cd194d2f96574489af3d88e72158e2ab4a09c0feba0b06beb341"
+    },
+    {
+      "path": "core/__pycache__/main_sequence_core.cpython-312.pyc",
+      "bytes": 5031,
+      "sha256": "24293942fef3b56de867331cc254349afe24c446ce52af3bb9fa03c5a6727acd"
+    },
+    {
+      "path": "core/__pycache__/observables_core.cpython-312.pyc",
+      "bytes": 4700,
+      "sha256": "ad9bc41ebf70610558ee4fc0afabf87fe58f4f3c59c8b45d5dae64e327013fce"
+    },
+    {
+      "path": "core/__pycache__/photometry_core.cpython-312.pyc",
+      "bytes": 5414,
+      "sha256": "d140c830ccd487d6d3804316ec98354549b2cced4ba98613ba8587904be4216b"
+    },
+    {
+      "path": "core/__pycache__/post_zams_core.cpython-312.pyc",
+      "bytes": 6876,
+      "sha256": "d87373cc82633a8a4409634df812d4ad239cd9ee8e2e0915e6e2a276dce6be59"
+    },
+    {
+      "path": "core/__pycache__/structure_core.cpython-312.pyc",
+      "bytes": 5935,
+      "sha256": "99bf398170e4c7223b68e10fd3db7db0417420cc1fa0034de93f5f98e1878290"
+    },
+    {
+      "path": "core/__pycache__/transport_core.cpython-312.pyc",
+      "bytes": 6101,
+      "sha256": "b681d06e06a5a76cacf06a5421c05f4d4ac01f7fcc8b6aa9a159261ceb999143"
+    },
+    {
+      "path": "core/atmosphere_core.py",
+      "bytes": 4042,
+      "sha256": "cdb9ae8536da0973453e2b09e40b65bc2e8c29283f8fda3e0178bcf6eb154cbf"
+    },
+    {
+      "path": "core/energy_core.py",
+      "bytes": 4081,
+      "sha256": "f0573ff688012bcece75ce0753639bab78f10ec78778c695868f965d7a3e402a"
+    },
+    {
+      "path": "core/lane_emden_core.py",
+      "bytes": 5441,
+      "sha256": "2c6e7687a505dd95fdfa02655c9d2ecaeb394e7e4616f57c9b8dc36ef70a890f"
+    },
+    {
+      "path": "core/main_sequence_core.py",
+      "bytes": 4938,
+      "sha256": "7cd0f0e8ded0b6af8f48d1d01191779da0ef8cb3c90c173362dc03f98b5a257e"
+    },
+    {
+      "path": "core/observables_core.py",
+      "bytes": 3139,
+      "sha256": "c867a78aa6d7ab3dbf37d4173eaaf15d609192bdea6a4fbc156cccfaba5cf05f"
+    },
+    {
+      "path": "core/photometry_core.py",
+      "bytes": 3573,
+      "sha256": "167bb68d4c10b10e20958306fe77b6199ca86f8450bedde8c10af188434c605c"
+    },
+    {
+      "path": "core/post_zams_core.py",
+      "bytes": 6655,
+      "sha256": "09a26f5c617aecc7532041cb0d680b95b7dc3f3b3d551850078bf1a03132bf2e"
+    },
+    {
+      "path": "core/structure_core.py",
+      "bytes": 4057,
+      "sha256": "82c4f598de8231eb579ddb97b20708c0bf353c5afe86e98cd65bc4c6f23f9635"
+    },
+    {
+      "path": "core/transport_core.py",
+      "bytes": 4238,
+      "sha256": "845fa532e9f2733d10ac68779a07a5a88d52f224ed305fc5cbf8521a7678d1c6"
+    },
+    {
+      "path": "data/BHAC15_tracks_structure_normalizado.csv",
+      "bytes": 953648,
+      "sha256": "1cf828701d9a5765d25abcdedd66ca869ac528d5e8a02a70d509dbd85a67a77b"
+    },
+    {
+      "path": "materials/8a_interior_estelar.pdf",
+      "bytes": 642872,
+      "sha256": "af9cefe9afde4189aab92aa137a308fd71a8184468484590e8108ec222bd5722"
+    },
+    {
+      "path": "materials/8b_fuentes_energia_estelar.pdf",
+      "bytes": 1262421,
+      "sha256": "d35e6114453e6448d112a77762ac66b3021fe2af950149e28d8c1ca80162c74b"
+    },
+    {
+      "path": "materials/8c_transporte_energia.pdf",
+      "bytes": 749398,
+      "sha256": "086e7805d51a09cfb7617817dae737a933c367b165d56c19828521e342bf41f8"
+    },
+    {
+      "path": "materials/Atmosferas_estelares.pdf",
+      "bytes": 2520123,
+      "sha256": "7c8882f18b756d62368c9944ffc975d532d5df7c6f520835888812c1fac60e4c"
+    },
+    {
+      "path": "materials/Clase_evolucion_estelar.pdf",
+      "bytes": 2077310,
+      "sha256": "7d5d287cd3f9d9ee08eb98d089d62a8bd5a190df13431be9e58a39201f1c5cae"
+    },
+    {
+      "path": "materials/Conceptos_Luminosidad_flujo_brillo.pdf",
+      "bytes": 143764,
+      "sha256": "922953e1238464c45b3e455b113b6706480c96cd0a238a6b5ab9304a30b25d9d"
+    },
+    {
+      "path": "materials/Energia_de_enlace.pdf",
+      "bytes": 278283,
+      "sha256": "2bdac676c750b2e69a983c1721763effbf6d43b2cf0fcf1531de58050c888c60"
+    },
+    {
+      "path": "materials/Estelar_Clase_1.pdf",
+      "bytes": 960350,
+      "sha256": "033c5f4b78fac590bc68264a33c65e7067630e133817c580a60faa25a0206c68"
+    },
+    {
+      "path": "materials/Estructura_estrella_solar_evolucionada.pdf",
+      "bytes": 365272,
+      "sha256": "b85a4e71d7ebac04c3988b25d259fd389f98f938c29991513fd9e3978b8dfca9"
+    },
+    {
+      "path": "materials/Estructura_secuencia_principal.pdf",
+      "bytes": 222777,
+      "sha256": "0801dd36ef180147a92a1106a1f4ad04b35ddf75261ea7e9e7e8f206880abb12"
+    },
+    {
+      "path": "materials/Evolucion_RGB_AGB.pdf",
+      "bytes": 439270,
+      "sha256": "be1d4708563b9214fbdb8125fbb80aaeb0008a2b94b108b21c941c0683acaaa7"
+    },
+    {
+      "path": "materials/Evolucion_estrella_5Msun.pdf",
+      "bytes": 305365,
+      "sha256": "df9d313b181643fdaa936baedb53474c0aecb4e51b06dea742f61f217d6dee97"
+    },
+    {
+      "path": "materials/Evolucion_post_ZAMS.pdf",
+      "bytes": 287555,
+      "sha256": "ff7e27e37e822bf88db94c159811efcfe19d2940c9e8a02c11aa532e2cc0d7eb"
+    },
+    {
+      "path": "materials/Interaccion_pp_Gamow.pdf",
+      "bytes": 248284,
+      "sha256": "70e3045aace1d736f3673c845f81fcbbd5df6b5779f6e583d4d844eeb4d30f56"
+    },
+    {
+      "path": "materials/Limite_Schonberg_Chandrasekhar.pdf",
+      "bytes": 305150,
+      "sha256": "f785aea91a75d97c674eec5fe7896fafab5cfc98fd495d7bdf6a274958e6fc36"
+    },
+    {
+      "path": "materials/Material_complementario_Estructura_estelar_El_Sol.pdf",
+      "bytes": 1294841,
+      "sha256": "9609dcd44b4fb576792886b3447c6447c3e600aac15af5422ab5d70e98c5507d"
+    },
+    {
+      "path": "materials/Principio_del_Espejo.pdf",
+      "bytes": 401135,
+      "sha256": "3ac22d2c5dd090c5f612d4182dca503a18f3820ae0bcb50ea1b3952b40eae2b7"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 83,
+      "sha256": "2859f34c3e2b269dfc588855a761495a61d5dea12224e41a23e0ba0378fc76cd"
+    },
+    {
+      "path": "web_labs.py",
+      "bytes": 15835,
+      "sha256": "6846dd1f743571ce142bd13b34497294d11e3a5184b58d165f5330f8f955b8d7"
+    },
+    {
+      "path": "web_labs_00_01.py",
+      "bytes": 8778,
+      "sha256": "245ae8c1dc79ae2f1b5245012a40bfcf8fff2e7e3cf2dc8246d7b51442570995"
+    }
+  ]
+}

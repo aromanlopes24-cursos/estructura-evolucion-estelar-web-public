@@ -1,0 +1,205 @@
+{
+  "module": "04",
+  "version": "1.0",
+  "levels": {
+    "1": {
+      "title": "Comprensión conceptual",
+      "subtitle": "Conceptos y relaciones directas con feedback específico.",
+      "items": [
+        {
+          "id": "04-L1-01",
+          "type": "choice",
+          "title": "Fuente solar",
+          "prompt": "La energía química puede sostener la luminosidad solar durante miles de millones de años?",
+          "resource": "8b",
+          "options": [
+            "No",
+            "Sí",
+            "Sólo sin gravedad"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto: la escala química es demasiado corta.",
+            "Las notas obtienen ~10^5 años.",
+            "La gravedad no resuelve el déficit químico."
+          ]
+        },
+        {
+          "id": "04-L1-02",
+          "type": "choice",
+          "title": "Kelvin–Helmholtz",
+          "prompt": "La escala KH está asociada principalmente a:",
+          "resource": "8b",
+          "options": [
+            "Contracción gravitacional",
+            "Extinción",
+            "Magnitudes"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No es radiación interestelar.",
+            "No es fotometría."
+          ]
+        },
+        {
+          "id": "04-L1-03",
+          "type": "choice",
+          "title": "Fusión",
+          "prompt": "La fusión H→He convierte aproximadamente qué fracción de masa en energía en la estimación de clase?",
+          "resource": "8b",
+          "options": [
+            "0.7%",
+            "70%",
+            "0.007%"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "Demasiado grande.",
+            "Demasiado pequeña."
+          ]
+        },
+        {
+          "id": "04-L1-04",
+          "type": "choice",
+          "title": "Curva de enlace",
+          "prompt": "Para núcleos ligeros, aumentar Eb/A mediante fusión:",
+          "resource": "Energía de enlace",
+          "options": [
+            "Libera energía",
+            "Siempre absorbe energía",
+            "No tiene relación energética"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "El material indica lo contrario.",
+            "Eb/A organiza la favorabilidad energética."
+          ]
+        },
+        {
+          "id": "04-L1-05",
+          "type": "choice",
+          "title": "Gamow",
+          "prompt": "El factor de Gamow representa principalmente:",
+          "resource": "p–p",
+          "options": [
+            "Penetración cuántica de la barrera Coulombiana",
+            "Extinción atmosférica",
+            "Convección"
+          ],
+          "correct": 0,
+          "feedback": [
+            "Correcto.",
+            "No es un efecto observacional terrestre.",
+            "No es transporte macroscópico."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Aplicación y cálculo",
+      "subtitle": "Cálculos e interpretación usando las relaciones del módulo.",
+      "items": [
+        {
+          "id": "04-L2-01",
+          "type": "numeric",
+          "title": "Kelvin–Helmholtz relativo",
+          "prompt": "Si la energía gravitacional disponible es fija y L se duplica, calcule tKH,nuevo/tKH,viejo.",
+          "resource": "t=E/L",
+          "answer": 0.5,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "t=E/L.",
+          "solution": "Duplicar L divide el tiempo por 2.",
+          "abs_tol": 0.01
+        },
+        {
+          "id": "04-L2-02",
+          "type": "numeric",
+          "title": "Energía nuclear relativa",
+          "prompt": "Si la fracción de masa que quema H se duplica a L fija, calcule tnuevo/tviejo.",
+          "resource": "E=ηfMc²",
+          "answer": 2.0,
+          "unit": "",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "La energía disponible es proporcional a la masa combustible.",
+          "solution": "El tiempo se duplica.",
+          "abs_tol": 0.02
+        },
+        {
+          "id": "04-L2-03",
+          "type": "numeric",
+          "title": "Punto de retorno",
+          "prompt": "Para p–p con E=10 keV, las notas dan rc≈144 fm. Escriba el valor.",
+          "resource": "Barrera Coulombiana",
+          "answer": 144.0,
+          "unit": "fm",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Use rc=1.44 MeV fm / 0.010 MeV.",
+          "solution": "rc≈144 fm.",
+          "abs_tol": 1.0
+        },
+        {
+          "id": "04-L2-04",
+          "type": "numeric",
+          "title": "Eficiencia",
+          "prompt": "Con eficiencia 0.007, ¿qué porcentaje de la masa corresponde?",
+          "resource": "Fusión",
+          "answer": 0.7,
+          "unit": "%",
+          "correct_feedback": "Correcto.",
+          "wrong_feedback": "Multiplique por 100.",
+          "solution": "0.007=0.7%.",
+          "abs_tol": 0.02
+        }
+      ]
+    },
+    "3": {
+      "title": "Desafío e interpretación",
+      "subtitle": "Razonamiento abierto con criterios explícitos de autoevaluación.",
+      "items": [
+        {
+          "id": "04-L3-01",
+          "type": "reflection",
+          "title": "Tres escalas",
+          "prompt": "Explique por qué comparar tiempos químico, Kelvin–Helmholtz y nuclear permite identificar la fuente energética dominante de una estrella como el Sol.",
+          "resource": "8b",
+          "criteria": [
+            "Relaciona tiempo con energía disponible y luminosidad.",
+            "Compara ~10^5, ~10^7 y ~10^10 años.",
+            "Conecta la escala nuclear con la edad estelar."
+          ],
+          "guide": "Una fuente viable debe tener reserva energética suficiente para la duración observada."
+        },
+        {
+          "id": "04-L3-02",
+          "type": "reflection",
+          "title": "Barrera y tunelamiento",
+          "prompt": "Explique por qué el Sol puede fusionar protones aunque la energía térmica típica sea insuficiente para superar clásicamente la barrera Coulombiana.",
+          "resource": "p–p",
+          "criteria": [
+            "Distingue superación clásica de tunelamiento.",
+            "Menciona la probabilidad de Gamow.",
+            "Relaciona la distribución térmica con la ventana de Gamow."
+          ],
+          "guide": "La mecánica cuántica permite penetración con E menor que la barrera clásica."
+        },
+        {
+          "id": "04-L3-03",
+          "type": "reflection",
+          "title": "Fe–Ni",
+          "prompt": "Use la curva de energía de enlace para explicar por qué la fusión deja de ser una fuente energética favorable al avanzar hacia la región Fe–Ni.",
+          "resource": "Energía de enlace",
+          "criteria": [
+            "Relaciona liberación con aumento de Eb/A.",
+            "Identifica el máximo cerca de Fe–Ni.",
+            "Explica que seguir fusionando ya no aumenta el enlace por nucleón."
+          ],
+          "guide": "La direção energética é 'subir' na curva de Eb/A."
+        }
+      ]
+    }
+  }
+}

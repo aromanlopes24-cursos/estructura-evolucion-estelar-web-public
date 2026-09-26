@@ -1,0 +1,69 @@
+{
+  "id": "02",
+  "title": "Estructura mecánica",
+  "subtitle": "Equilibrio hidrostático, masa y ecuación de estado",
+  "next": "03 — Polítropos y Lane–Emden",
+  "materials": [
+    {
+      "label": "8a — Interiores estelares",
+      "file": "8a_interior_estelar.pdf"
+    },
+    {
+      "label": "Material complementario — Estructura estelar / Sol",
+      "file": "Material_complementario_Estructura_estelar_El_Sol.pdf"
+    }
+  ],
+  "predictions": [
+    {
+      "question": "En equilibrio hidrostático, dP/dr normalmente es:",
+      "options": [
+        "Negativo",
+        "Positivo",
+        "Cero en toda la estrella"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "La presión debe caer hacia afuera."
+    },
+    {
+      "question": "Si ρ aumenta en una capa, manteniendo otros factores, |dM/dr|:",
+      "options": [
+        "Aumenta",
+        "Disminuye",
+        "No cambia"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "dM/dr∝ρ."
+    },
+    {
+      "question": "¿Por qué se necesita una ecuación de estado?",
+      "options": [
+        "Para relacionar P con el estado local de la materia",
+        "Para definir la distancia",
+        "Para calcular magnitudes"
+      ],
+      "correct": 0,
+      "ok": "Correcto.",
+      "bad": "Las ecuaciones mecánicas contienen más incógnitas que ecuaciones."
+    }
+  ],
+  "status": "contenido",
+  "lab_ready": true,
+  "lab_entry": "app/app_lab.py",
+  "lab_version": "v1.0",
+  "lab_experiments": [
+    "Capa esférica y continuidad de masa",
+    "Masa encerrada en una esfera uniforme",
+    "Equilibrio hidrostático y perfil de presión",
+    "Escala de la presión central",
+    "Cierre del sistema mecánico",
+    "Síntesis radial"
+  ],
+  "levels_ready": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "levels_file": "levels.json"
+}
