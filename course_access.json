@@ -1,0 +1,10 @@
+{
+  "enabled_modules": [
+    "00",
+    "01",
+    "02"
+  ],
+  "show_locked_modules": true,
+  "locked_label": "próximamente",
+  "student_message": "Los módulos se habilitan progresivamente según el avance de las clases."
+}

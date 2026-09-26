@@ -5,6 +5,7 @@ import streamlit as st
 
 ROOT=Path(__file__).resolve().parent
 CONTENT=ROOT/"content"; MATERIALS=ROOT/"materials"; ICON=ROOT/"assets"/"stellar_evolution_icon.png"
+ACCESS_FILE=ROOT/"course_access.json"
 sys.path.insert(0,str(ROOT))
 from web_labs import lab02,lab03,lab04,lab05,lab06,lab07,lab08
 import web_labs_00_01 as early_labs
@@ -39,6 +40,34 @@ def load(mid):
     return json.loads((d/"modulo.json").read_text(encoding="utf-8")),json.loads((d/"levels.json").read_text(encoding="utf-8"))
 def md(mid,n):return (mdir(mid)/n).read_text(encoding="utf-8")
 
+def load_access():
+    default={
+        "enabled_modules":["00","01","02"],
+        "show_locked_modules":True,
+        "locked_label":"próximamente",
+        "student_message":"Los módulos se habilitan progresivamente según el avance de las clases."
+    }
+    if not ACCESS_FILE.exists():
+        return default
+    try:
+        raw=json.loads(ACCESS_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return default
+    valid={m for m,_ in MODULES}
+    enabled=[str(x).zfill(2) for x in raw.get("enabled_modules",default["enabled_modules"])]
+    enabled=[m for m in enabled if m in valid]
+    if not enabled:
+        enabled=["00"]
+    return {
+        "enabled_modules":enabled,
+        "show_locked_modules":bool(raw.get("show_locked_modules",True)),
+        "locked_label":str(raw.get("locked_label","próximamente")),
+        "student_message":str(raw.get("student_message",default["student_message"])),
+    }
+
+ACCESS=load_access()
+ENABLED=set(ACCESS["enabled_modules"])
+
 def seed():
     k="_stable_answer_shuffle_seed"
     if k not in st.session_state:st.session_state[k]=secrets.randbits(64)
@@ -50,9 +79,19 @@ def order(key,n):
     return list(st.session_state[k])
 
 with st.sidebar:
-    st.image(str(ICON),width=128);st.markdown("## Estructura y Evolución Estelar");st.caption("Web v1.2 · curso completo")
-    label=st.radio("Módulos",[f"{m} · {t}" for m,t in MODULES],key="module_selector")
+    st.image(str(ICON),width=128);st.markdown("## Estructura y Evolución Estelar");st.caption("Web v1.2 · curso")
+    enabled_labels=[f"{m} · {t}" for m,t in MODULES if m in ENABLED]
+    if st.session_state.get("module_selector") not in enabled_labels:
+        st.session_state["module_selector"]=enabled_labels[-1]
+    label=st.radio("Módulos habilitados",enabled_labels,key="module_selector")
     MID=label[:2]
+
+    locked=[(m,t) for m,t in MODULES if m not in ENABLED]
+    if ACCESS["show_locked_modules"] and locked:
+        st.caption("Próximamente")
+        for m,t in locked:
+            st.caption(f"🔒 {m} · {t} · {ACCESS['locked_label']}")
+
     st.divider();section=st.radio("Ruta del módulo",SECTIONS,key=f"route_{MID}")
     st.caption("observación → parámetros globales → estructura → energía → evolución")
 
@@ -64,7 +103,12 @@ def home():
     nlab=len(CFG.get("lab_experiments",[]))
     lcounts=[len(LEVELS["levels"][str(i)]["items"]) for i in (1,2,3)]
     c1,c2,c3,c4=st.columns(4);c1.metric("Módulo",MID);c2.metric("Laboratorio",f"{nlab or '—'} experimentos");c3.metric("Nivel 1",f"{lcounts[0]} actividades");c4.metric("Niveles 2–3",f"{lcounts[1]} + {lcounts[2]}")
-    st.markdown('<div class="ee-note"><b>Web v1.2:</b> módulos 00–08 habilitados.</div>',unsafe_allow_html=True)
+    habilitados=", ".join(ACCESS["enabled_modules"])
+    st.markdown(
+        f'<div class="ee-note"><b>Módulos disponibles:</b> {habilitados}. '
+        f'{ACCESS["student_message"]}</div>',
+        unsafe_allow_html=True
+    )
 
 def predictions():
     page_header("Predicción",f"Módulo {MID} · primero prediga, después compruebe")
