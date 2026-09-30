@@ -2,7 +2,10 @@
   "enabled_modules": [
     "00",
     "01",
-    "02"
+    "02",
+    "03",
+    "04",
+    "05"
   ],
   "show_locked_modules": true,
   "locked_label": "próximamente",
