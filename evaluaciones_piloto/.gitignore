@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.streamlit/secrets.toml
+*.sqlite*
+*.db
+*.hex
+*.csv
+*.json
+*.eml
+*.env
+*.toml
+*.log
+*.zip
+entregas/
+secretos/
+diagnosticos_browser/

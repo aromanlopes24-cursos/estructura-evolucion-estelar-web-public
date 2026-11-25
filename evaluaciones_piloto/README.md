@@ -1,0 +1,3 @@
+# EEE — Evaluaciones v1.3.1 — ensaio remoto DEMO
+
+Publicação isolada de homologação técnica, sem dados pessoais e sem nota. Entrada `cloud_demo.py` (não `evaluaciones.py`). O wrapper bloqueia cadastro real. As figuras e o motor são idênticos ao checkpoint funcional local. Configurar os Secrets a partir do gerador privado que acompanha o pacote de operação. Usar uma configuração nova para cada rodada (1, 21, 30), reiniciar a app, e verificar auditoria via `?auditoria=1` após o teste. Não divulgar a URL do ensaio à turma. O armazenamento do Community Cloud não é durável; nunca use este deployment para a avaliação oficial ou o tutorial real. Não guardar credenciais no Git. Não inclua gabarito.
